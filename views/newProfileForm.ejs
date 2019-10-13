@@ -1,0 +1,454 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+
+       <!-- Styles -->
+    <link rel="stylesheet" href="css/all.min.css">    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/userDashboard.css">
+	<link rel="stylesheet" href="css/newIndex.css">
+    <link rel="stylesheet" href="css/hamburgerMenu.css">
+	<link rel="stylesheet" href="css/admin.css">
+	<link rel="stylesheet" href="css/newProfile.css">
+	<link rel="stylesheet" href="css/admin.css">
+	<link rel="stylesheet" href="css/newProfileForm.css">
+
+    <!-- Pre load javaScript -->
+
+</head>
+<body>
+
+    <!-- This wraps the whole page -->
+    <div id="bodyWrap">
+        <!-- This holds the header -->
+        <header>
+            <nav class="whiteHeader">
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo whiteLogo">
+                  KATALYST
+               </div>
+               <div class="menu" style="margin-right: 35px;">
+                  <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">About</a></li>
+                     <li><a href="#">News</a></li>
+                     <li><a href="#">Contact</a></li>
+                     <li><a href="#">Dashboard</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+        <div class="mainHeadNotification">
+            <i class="fas fa-bell" onclick="showMainNot()"></i>
+            <!-- notification reminder -->
+            <p class="mainHeadNotificationIcon" onclick="showMainNot()">3</p>
+            <!-- this is the real notification box-->
+            <div 
+                class="mainHeadNotificationContainer"
+                id="mainHeadNotificationContainer"
+                style="height: 0px; text-align: center;"
+            >
+                <p>this ia a notification</p>
+                <p>Kuldeep liked your profile.</p>
+                <p>JavaScript sucks!!!</p>
+                <i class="fas fa-times-circle" style="color: #fafafa;" onclick="showMainNot()"></i>                    
+            </div>
+            <!-- end of mainHeadNotificationBox -->
+        </div>
+        <!-- End of  mainHeadNotifiacction-->
+
+    </div>
+    <!-- End of bodyWrap -->
+
+    <div class="mainBody">
+
+        <div class="sideBar">
+            <div class="row justify-content-center align-items-center userProfile">
+                <div class="col-sm-3 text-center">
+                    <img src="./img/instructors/ins2.jpg" alt="">
+                </div>
+                <div class="col-sm-5 text-center">
+                    <p>Suraj Dubey</p>
+                    <p style="font-size: 12px;">Project Manager</p>
+                    <div class="rating">
+						<input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5
+							stars</label>
+						<input type="radio" id="star4" name="rating" value="4" /><label for="star4"
+							title="Pretty good">4 stars</label>
+						<input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3
+							stars</label>
+						<input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2
+							stars</label>
+						<input type="radio" id="star1" name="rating" value="1" /><label for="star1"
+							title="Sucks big time">1 star</label>
+					</div>
+                </div>
+            </div>
+            <!-- end of userProfile -->
+
+            <div class="row justify-content-center" style="margin-top: 30px;">
+                <div class="col-sm-8 text-center">
+                    <button class="viewButton pointer">About</button>
+                </div>
+                <div class="col-sm-8 text-center">
+                    <button class="viewButton pointer">Information</button>
+                </div>
+                <div class="col-sm-8 text-center">
+                    <button class="viewButton pointer">Track Record</button>
+                </div>
+                <div class="col-sm-8 text-center">
+                    <button class="viewButton pointer">Market</button>
+                </div>
+                <div class="col-sm-8 text-center">
+                    <button class="viewButton pointer">Investment</button>
+                </div>
+                <div class="col-sm-8 text-center">
+                    <button class="viewButton pointer">Contact</button>
+                </div>
+                <div class="col-sm-8 text-center">
+                    <button class="viewButton submitFormButton pointer">SAVE</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- end of side bar -->
+
+        <!-- main area -->
+        <div class="mainArea">
+
+
+            <!-- mainArea 1 -->
+                <div class="mainArea1">
+                 <form>
+
+                    <div class="row profileIntro">
+                        <!-- project desc -->
+                        <div class="col-sm-6 proDescCont">
+                            <img src="./img/instructors/pro1.jpg" alt="">
+                            <div class="proDesc">
+                                <h2><input name="input1" style="padding-bottom: 10px;" class="newInput" type="text" value="Some Project Name"> </h2>
+                                <p><input name="input2" class="newInput" type="text" value="Founder Name"></p>
+                            </div>
+                        </div>
+                        <!-- project desc end -->
+                        <!-- fouders -->
+                        <div class="col-sm-5">
+                            <div class="fouderProfileCont">
+                                <!-- fouder 1 -->      
+                                <p class="founderHeader"><i class="fas fa-users"></i>Founders</p>                           
+                                <div class="row founderProfile align-items-center">
+                                    <div class="col-sm-1 text-left" style="padding: 0">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h3> <input name="input3" style="width: auto;" class="newInput" type="text" value="Prateek Dash"><span style="margin: 0 5px;">|</span> <span style="font-size: 14px;"><input name="input3a" style="width: 100px;" class="newInput" type="text" value="Manager"></span> </h3>
+                                    </div>
+                                </div>
+                                <!-- fouder 2 -->                                
+                                <div class="row founderProfile align-items-center">
+                                    <div class="col-sm-1 text-left" style="padding: 0">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h3><input name="input4" style="width: auto;" class="newInput" type="text" value="Kuldeep Sharma"> <span style="margin: 0 5px;">|</span> <span style="font-size: 14px;"> <input name="input4a" style="width: 100px;" class="newInput" type="text" value="Technical"> </span> </h3>                                        
+                                    </div>
+                                </div>
+                                <!-- fouder 2 -->                                
+                                <div class="row founderProfile align-items-center">
+                                    <div class="col-sm-1 text-left" style="padding: 0">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <h3><input name="input5" style="width: auto;" class="newInput" type="text" value="Suraj Dubey"><span style="margin: 0 5px;">|</span> <span style="font-size: 14px;"> <input name="input5a" style="width: 100px;" class="newInput" type="text" value="Technical"></span> </h3>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- end of fouders -->
+                    </div>
+                <!-- end of profile intro -->
+                <div class="teamIntro">
+                    <div class="row align-items-center justify-content-around">
+                        <div class="col-sm-4">
+                            <h2 style="text-align: right;">Story behind <span style="font-size: 45px; color: #6710f2b6 ; font-weight: 700;margin: 0 5px;">Team</span> bonding</h2>
+                            <p><textarea name="input6" class="newTextArea" name="" id="" cols="45" rows="6">Some content about the team bonding and culture Some content about the team bonding and culture Some content about the team bonding and culture Some content about the team bonding and culture</textarea> </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img style="width: 100%;" src="./img/instructors/team.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- end of team intro -->
+                <div class="teamIntro">
+                    <div class="row align-items-center justify-content-around">
+                        <div class="col-sm-4">
+                            <img style="width: 100%;" src="./img/instructors/team.jpg" alt="">
+                        </div>
+                        <div class="col-sm-4">
+                            <h2>Vision of the <span style="font-size: 45px; color: #6710f2b6 ; font-weight: 700;margin: 0 5px;">Company</span></h2>
+                            <p> <textarea name="input7" class="newTextArea" name="" id="" cols="45" rows="6">Here is some text about the vision of company. Here is some text about the vision of company. Here is some text about the vision of company. Here is some text about the vision of company.</textarea> </p>                          
+                        </div>
+                    </div>
+                </div>
+                <!-- end of team intro -->
+
+                <div class="teamIntro">
+                    <div class="row align-items-center justify-content-around">
+                        <div class="col-sm-4">
+                            <h2 style="text-align: right; margin-bottom: 30px;">Status of  the <span style="font-size: 45px; color: #6710f2b6 ; font-weight: 700;margin: 0 5px;">Project</span></h2>
+                            <p style="width: 100%; text-align: center;" >
+                                <select name="input8" class="newSelect" style="font-size: 18px;">
+                                    <option value="volvo">Ideation</option>
+                                    <option value="consulting" selected>Concepting</option>
+                                    <option value="commitment">Commitment</option>
+                                    <option value="validation">Validation</option>
+                                    <option value="scaling">Scaling</option>
+                                    <option value="estblashing">Estblashing</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img style="width: 100%;" src="./img/instructors/production.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- end of team intro -->
+
+                <div class="sectorCont">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p>
+                                    <select name="input9" class="newSelect">
+                                        <option value="CONSULTING">CONSULTING</option>
+                                        <option value="CONSUMER INTERNET">CONSUMER INTERNET</option>
+                                        <option value="E-COMMERCE">E-COMMERCE</option>
+                                        <option value="ENTERPRISE MOBILITY">ENTERPRISE MOBILITY</option>
+                                        <option value="GOVERNMENT">GOVERNMENT</option>
+                                        <option value="HYPERLOCAL">HYPERLOCAL</option>
+                                        <option value="LOCATION BASED SERVICES">LOCATION BASED SERVICES</option>
+                                        <option value="MARKETPLACE">MARKETPLACE</option>			
+                                        <option value="MOBILE">MOBILE</option>
+                                        <option value="OFFLINE" required>OFFLINE</option>
+                                        <option value="ONLINE AGGREGATOR">ONLINE AGGREGATOR</option>
+                                        <option value="PEER TO PEER">PEER TO PEER</option>
+                                        <option value="PLATFORM">PLATFORM</option>
+                                        <option value="RENTAL">RENTAL</option>
+                                        <option value="SHARING ECONOMY">SHARING ECONOMY</option>
+                                        <option value="SUBSCRIPTION COMMERCE">SUBSCRIPTION COMMERCE</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Horixzontal Sector</p>
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p><input name="input10" class="newInput smallInput" type="text" value="2 Years"></p>                                                                                                
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Age of Product</p>
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p>
+                                    <select name="input11" class="newSelect">
+                                        <option value="3D printing">3D printing</option>
+                                        <option value="Adtech">Adtech</option>
+                                        <option value="Agtech">Agtech</option>
+                                        <option value="Artificial intelligence and Machine Learning">AI with ML</option>
+                                        <option value="AudioTech">AudioTech</option>
+                                        <option value="Augmented Reality">Augmented Reality</option>
+                                        <option value="Autonomous cars">Autonomous cars</option>
+                                        <option value="B2B payments">B2B payments</option>
+                                        <option value="BEAUTY">BEAUTY</option>
+                                        <option value="BIG DATA">BIG DATA</option>
+                                        <option value="CANNABIS">CANNABIS</option>
+                                        <option value="CLEANTECH">CLEANTECH</option>
+                                        <option value="construction technology">CONSTRUCTION TECH</option>
+                                        <option value="blockchain">BLOCKCHAIN</option>
+                                        <option value="cybersecurity">CYBERSECURITY</option>
+                                        <option value="ecommerce edtech">ECOMMERCE EDTECH</option>
+                                        <option value="ephemeral content">EPHEMERAL CONTENT</option>
+                                        <option value="esports">ESPORTS</option>
+                                        <option value="fintech">FINTECH</option>
+                                        <option value="foodtech">FOODTECH</option>
+                                        <option value="gaming">GAMING</option>
+                                        <option value="healthcare">HEALTHCARE</option>
+                                        <option value="hr tech" required>HR TECH</option>
+                                        <option value="impact investment">IMPACT INVESTMENT</option>
+                                        <option value="industrials">INDUSTRIALS</option>
+                                        <option value="infrastructure">INFRASTRUCTURE</option>
+                                        <option value="insurtech">INSURTECH</option>
+                                        <option value="iot">IOT</option>
+                                        <option value="life sciences">LIFE SCIENCES</option>
+                                        <option value="lohas and wellness">LOHAS AND WELLNESS</option>
+                                        <option value="manufacturing">MANUFACTURING</option>
+                                        <option value="techmobile">TECHMOBILE</option>
+                                        <option value="mortgage tech">MORTGAGE TECH</option>
+                                        <option value="nanotechnoogy">NANOTECHNOLOGY</option>
+                                        <option value="oil and gas">OIL AND GAS</option>
+                                        <option value="oncology">ONCOLOGY</option>
+                                        <option value="pet technology">PET TECHNOLOGY</option>
+                                        <option value="real estate technology">REAL ESTATE TECH</option>
+                                        <option value="restaurant technology">RESTAURNT TECH</option>
+                                        <option value="ridesharing">RIDESHARING</option>
+                                        <option value="robotics and drones">ROBOTICS AND DRONES</option>
+                                        <option value="software as a services">SOFTWARE AS A SERVICES</option>
+                                        <option value="space tech">SPACE TECH</option>
+                                        <option value="media and tech">MEDIA AND TECH</option>
+                                        <option value="virtual reality">VIRTUAL REALITY</option>
+                                        <option value="wearables">WEARABLES</option>
+                                        <option value="quantified self">QUANTIFIED SELF</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Vertical Sector</p>
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                    </div>
+                </div>
+                <!-- end of sectorCont -->
+
+                <div class="whatCont">
+                    <div class="row align-items-center justify-content-around">
+                        <div class=" col-sm-4 what">
+                            <h2>What is the <span style="font-size: 45px; color: #6710f2b6 ; font-weight: 700;margin: 0 5px;">Project</span></h2>
+                            <p><textarea name="input12" class="newTextArea" name="" id="" cols="45" rows="6">Some text about the project. Some text about the project. Some text about the project. Some text about the project.</textarea> </p>
+                        </div>
+                        <div class=" col-sm-4 what">
+                            <h2>What does it <span style="font-size: 45px; color: #6710f2b6 ; font-weight: 700;margin: 0 5px;">solves</span></h2>
+                            <p><textarea name="input13" class="newTextArea" name="" id="" cols="45" rows="6">Content about achivements of the product. content about achivements of the product. content about achivements of the product.</textarea> </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of whatCont -->
+
+                <div class="sectorCont" style="padding-top: 10px;">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p><input name="input14" class="newInput smallInput" type="text" value="1 Lacs"></p>                                                                
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Valuation of Project</p>
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p><input name="input15" class="newInput smallInput" type="text" value="1 Lacs"></p>                                                              
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Size of Market</p>
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p><input name="input16" class="newInput smallInput" type="text" value="1 Lacs"></p>                                
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Return of Investment</p>
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p><input name="input17" class="newInput smallInput" type="text" value="25000"></p>                                
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Net MRR Growth</p>
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p><input name="input18" class="newInput smallInput" type="text" value="50000"></p>
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Net MRR Churn</p>
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                    </div>
+                </div>
+                <!-- end of sectorCont -->
+
+                <div id="investment" class="sectorCont" style="padding: 0">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-sm-5">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-sm-10 sector">
+                                    <div class="sectorInfo">
+                                        <p><input name="input19" class="newInput smallInput" type="text" value="50000"></p>
+                                    </div>
+                                    <div class="sectorHeader" style="padding-left: 40px; padding-right: 40px;">
+                                        <p>Size of Market</p>
+                                    </div>
+                                </div>
+                                <!-- end of a sector -->
+                                <div class="col-sm-10 sector">
+                                    <div class="sectorInfo">
+                                        <p><input name="input20" class="newInput smallInput" type="text" value="50000"></p>
+                                    </div>
+                                    <div class="sectorHeader">
+                                        <p>Return of Investment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <img style="height: 350px;" src="./img/instructors/women.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- contact -->
+                <div id="contact" class="contact text-center">
+                    <h2 style="padding-bottom: 40px;">Contact</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 text-center">
+                            <h2>Phone No.</h2>
+                            <p>
+                                <i  style="margin-right: 10px" class="fa fa-phone" aria-hidden="true"></i>
+                                <input name="input21" class="newInput" type="text" value="9911526232">
+                            </p>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <h2>Email</h2>
+                            <p>
+                                <i style="margin-right: 10px" class="fa fa-envelope"></i>
+                                <input name="input22" class="newInput" type="text" value="email@mail.com">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+        </form>
+        </div>
+        <!-- end of main area -->
+
+    </div>
+    <!-- end of main body -->
+
+    <!-- Post Load javaScript -->
+    <script src="./js/userDashboard.js"></script>
+
+
+</body>
+</html>

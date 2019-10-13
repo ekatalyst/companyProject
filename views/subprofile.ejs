@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Profile</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/stylepro.css">
+	<!--Raating-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+		id="bootstrap-css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+		#b1 {
+			width: 110px;
+			height: 30px;
+			text-align: center;
+			border-radius: 5px;
+			color: #FBFCFC;
+			background: rgb(119, 119, 119);
+			margin-top: 10px;
+			margin-left: 20px;
+			outline: none;
+			border: none;
+			box-shadow: 0.5px 0.5px 0.5px #9e9d9a;
+		}
+
+		#b2 {
+			width: 110px;
+			height: 30px;
+			text-align: center;
+			border-radius: 5px;
+			color: #FBFCFC;
+			background: rgb(119, 119, 119);
+			margin-top: 10px;
+			margin-left: 20px;
+			outline: none;
+			border: none;
+			box-shadow: 0.5px 0.5px 0.5px #9e9d9a;
+
+		}
+
+		#b3 {
+			width: 110px;
+			height: 30px;
+			text-align: center;
+			border-radius: 5px;
+			color: #FBFCFC;
+			background: rgb(119, 119, 119);
+			margin-top: 10px;
+			margin-left: 20px;
+			outline: none;
+			border: none;
+			box-shadow: 0.5px 0.5px 0.5px #9e9d9a;
+
+		}
+
+		#b4 {
+			width: 110px;
+			height: 30px;
+			text-align: center;
+			border-radius: 5px;
+			color: #FBFCFC;
+			background: rgb(119, 119, 119);
+			margin-top: 10px;
+			margin-left: 20px;
+			outline: none;
+			border: none;
+			box-shadow: 0.5px 0.5px 0.5px #9e9d9a;
+
+		}
+
+		#b1:hover {
+			color: #080707;
+			border: 1.2px solid #000;
+			background: rgb(255, 255, 255);
+		}
+
+		#b2:hover {
+			color: #080707;
+			border: 1.2px solid #000;
+			background: rgb(255, 255, 255);
+		}
+
+		#b3:hover {
+			color: #080707;
+			border: 1.2px solid #000;
+			background: rgb(255, 255, 255);
+		}
+
+		#b4:hover {
+			color: #080707;
+			border: 1.2px solid #000;
+			background: rgb(255, 255, 255);
+		}
+
+		.desc {
+			margin-bottom: 15rem;
+		}
+
+		#aboutBox, #teamBox, #projectBox, #investmentBox, #contactBox{
+			display: none;
+			cursor: pointer;
+		}
+
+
+	</style>
+</head>
+
+<body>
+
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
+			<h1 id="colorlib-logo"><a href="index.html">name<span>.</span></a></h1>
+
+
+			<div class="container">
+				<div class="row">
+					<div class="rating">
+						<input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5
+							stars</label>
+						<input type="radio" id="star4" name="rating" value="4" /><label for="star4"
+							title="Pretty good">4 stars</label>
+						<input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3
+							stars</label>
+						<input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2
+							stars</label>
+						<input type="radio" id="star1" name="rating" value="1" /><label for="star1"
+							title="Sucks big time">1 star</label>
+					</div>
+				</div>
+			</div>
+
+
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li onclick="toggleBox(1)" class="colorlib-active"><a href="#">About</a></li>
+					<li onclick="toggleBox(2)">Team</a></li>
+					<li onclick="toggleBox(3)">Project</a></li>
+					<li onclick="toggleBox(4)">Investment</a></li>
+					<li onclick="toggleBox(5)">Contact</a></li>
+					<li><button id="b1">Connect</button></a></li>
+					<li><button id="b2">Message</button></li>
+					<li><button id="b3">Like</button></li>
+					<li><button id="b4">Report</button></li>
+				</ul>
+			</nav>
+
+			<div class="colorlib-footer">
+				<p>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright &copy;<script>
+						document.write(new Date().getFullYear());
+					</script> All rights reserved |<i class="icon-heart" aria-hidden="true">| </i> by <a
+						href="https://colorlib.com" target="_blank">@Catalyst</a>
+					<ul>
+						<li><a href="#"><i class="icon-facebook"></i></a></li>
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-instagram"></i></a></li>
+						<li><a href="#"><i class="icon-linkedin"></i></a></li>
+					</ul>
+			</div>
+		</aside> <!-- END COLORLIB-ASIDE -->
+		<script src="./js/testToggle.js"></script>
+		<div id="colorlib-main">
+			<div class="hero-wrap js-fullheight" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="js-fullheight d-flex justify-content-center align-items-center">
+					<div class="col-md-8 text text-center">
+						<div id="aboutBox" class=" aboutBox mainBox">
+							<p><%= user_data1 %></p>
+							<p><%= user_data2 %></p>
+							<p><%= user_data3 %></p>
+							<p><%= user_data4 %></p>
+							<p><%= user_data5 %></p>
+						</div>
+						<div id="teamBox" class=" teamBox mainBox">
+							<p><%= user_data6 %></p>
+							<p><%= user_data7 %></p>
+							<p><%= user_data8 %></p>
+							
+						</div>
+						<div id="projectBox" class=" projectBox mainBox">
+							<p><%= user_data9  %></p> 
+							<p><%= user_data10 %></p>
+							<p><%= user_data11 %></p>
+							<p><%= user_data12 %></p>
+							<p><%= user_data13 %></p>
+							<p><%= user_data14 %></p>
+							<p><%= user_data15 %></p>
+							<p><%= user_data16 %></p>
+						</div>
+						<div id="investmentBox" class=" investmentBox mainBox">
+							<p><%= user_data17 %></p>
+							<p><%= user_data18 %></p>
+							<p><%= user_data19 %></p>
+							<p><%= user_data20 %></p>
+							<p><%= user_data21 %></p> 
+						</div>
+						<div id="contactBox" class=" contactBox mainBox">
+
+							<p><%= user_data22 %></p> 
+							<p><%= user_data23 %></p>
+							<p><%= user_data24 %></p> 
+						</div> 
+					</div>
+				</div>
+			</div>
+
+
+			<!-- loader -->
+			<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+					<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+					<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+						stroke="#F96D00" /></svg></div>
+
+
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery-migrate-3.0.1.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/jquery.easing.1.3.js"></script>
+			<script src="js/jquery.waypoints.min.js"></script>
+			<script src="js/jquery.stellar.min.js"></script>
+			<script src="js/owl.carousel.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>
+			<script src="js/aos.js"></script>
+			<script src="js/jquery.animateNumber.min.js"></script>
+			<script src="js/bootstrap-datepicker.js"></script>
+			<script src="js/jquery.timepicker.min.js"></script>
+			<script src="js/scrollax.min.js"></script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+			</script>
+			<script src="js/google-map.js"></script>
+			<script src="js/mainpro.js"></script>
+			<script src="js/testToggle.js"></script>
+
+</body>
+
+</html>

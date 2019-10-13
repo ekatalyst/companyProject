@@ -1,0 +1,125 @@
+/* extra css for form */
+
+/* submit button */
+
+.submitFormButton {
+    margin-top: 30px;
+    width: 310px;
+    margin-left: -50px;
+    border-radius: 0;
+    padding: 20px 0;
+    background: linear-gradient(to right,#007bff4f 0%, #7349cc 100%);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+/* input feild */
+
+.newInput{
+    background: none;
+    border: none;
+    color: inherit;
+    outline: #7349cc;
+}
+
+.newTextArea{
+    background: none;
+    text-align: justify;
+    width: 400px;
+    height: auto;
+    border: none;
+    outline: #7349cc;
+}
+
+/* new raiting */
+
+
+/* raiting */
+
+/*Rating-Stars*/
+.rating {
+    width: 90px;
+    margin: 0 auto 0  auto;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+  follow these rules. Every browser that supports :checked also supports :not(), so
+  it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    clip:rect(0,0,0,0);
+}
+
+.newRating:not(:checked) > label {
+    float: right;
+    width: auto;
+    /* padding:0 .1em; */
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:140%;
+    /* line-height:1.2; */
+    color:#ddd;
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: navajowhite;
+    
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: navajowhite;
+    
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: navajowhite;
+    
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+/*Rating-Stars*/
+
+/* end of new raiting */
+
+/* for select tag */
+
+.sectorInfo{
+    padding: 15px 20px;
+}
+
+.newSelect{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #7349cc;
+    max-width: 130px;
+}
+
+.smallInput{
+    font-size: 14px;
+}
+
+.whatCont {
+    padding-bottom: 10px;
+}
+
+.sectorHeader {
+    top: 38px;
+}

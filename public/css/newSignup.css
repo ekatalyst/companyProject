@@ -1,0 +1,33 @@
+
+.userOptionSelect {
+    font-size: 14px !important;
+}
+
+.userOptionSelect select {
+    color: #3b3b3b;
+    border-radius: 7px;
+    outline: none;
+    font-weight: 100 !important;
+}
+
+
+.termInfo{
+    border-radius: 12px;
+    width: 300px;
+    overflow-y: scroll !important;
+}
+
+#terms-1, #terms-2, #terms-3{
+    height: 0px;
+    transition: 300ms;
+}
+
+.termInfo p {
+    font-size: 14px !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

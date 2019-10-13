@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Katalyst</title>
+
+    <!--about meta -->
+    <meta name="theme-color" content="#6610f2">
+    <link rel="icon" href="./img/instructors/call.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/newProfile.css">
+    <link rel="stylesheet" href="./css/newIndex.css">
+    <link rel="stylesheet" href="./css/about.css">
+
+    <!-- Pre load script -->
+
+</head>
+<body>
+    
+    <div class="bodyWrap" id="bodyWrap">
+
+        <header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x menuOpenIcon"></i>
+               </div>
+               <div class="logo">
+                  KATALYST
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="/">Home</a></li>
+                     <li><a href="/about-us">About</a></li>
+                     <li><a href="/news">News</a></li>
+                     <li><a href="/contact">Contact</a></li>
+                     <li><a href="/dash">Dashboard</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+         <div class="mainHeadNotification">
+            <i class="fas fa-bell" onclick="showMainNot()"></i>
+            <!-- notification reminder -->
+            <p class="mainHeadNotificationIcon" onclick="showMainNot()">2</p>
+            <!-- this is the real notification box-->
+            <div 
+                class="mainHeadNotificationContainer"
+                id="mainHeadNotificationContainer"
+                style="height: 0px; text-align: center;"
+            >
+                <p>Welcome to eKtalyst</p>
+                <p>Nothing else to show</p>
+                <i class="fas fa-times-circle" style="color: #fafafa;" onclick="showMainNot()"></i>                    
+            </div>
+            <!-- end of mainHeadNotificationBox -->
+        </div>
+        <!-- End of  mainHeadNotifiacction-->
+
+        <!-- mainBanner -->
+        <div class="mainBanner blueBack">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-sm-6 text-center">
+                        <h1>OUR <span class="mainBannerMain">DNA</span></h1>
+                        <p>Handcrafted with thought.</p>
+                    </div>
+                    <div class="col-sm-6 text-center">
+                        <div class="mainBannerImage">
+                            <img src="./img/instructors/jumbo1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of mainBanner -->
+
+        <!-- facts -->
+        <div class="facts">
+            <div class="container">
+                <div class="row align-items-center justify-content-around">
+                    <div class="col-sm-5 ">
+                        <h1>We are <br> <span class="proud">PROUD</span> of</h1>
+                    </div>
+                    <div class="col-sm-7 text-center">
+                        <div class="factsContainer text-left">
+                            <p>
+                                <i class="fas fa-rocket factsContainerIcon"></i>                                
+                                MSMe is 35% of total GDP of India.
+                            </p>
+                            <p>
+                                <i class="fas fa-rocket factsContainerIcon"></i>                                
+                                Worlds 50% population wants to be their own boss.
+                            </p>
+                            <p>
+                                <i class="fas fa-rocket factsContainerIcon"></i>                                
+                                India is the second most Start-Up producing country.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of facts -->
+
+        <div class="team">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-sm-6 text-center">
+                        <img class="teamHeadImg" src="./img/instructors/corporate-goals.jpg" alt="">
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h1>Our <span class="teamHeading">TEAM</span></h1>
+                    </div>
+                </div>
+                <div class="row justify-content-around" style="margin-top: 70px;">
+                    <div class="col-sm-5 teamMem text-center">
+                        <img src="./img/instructors/pra.jpg" alt="">
+                        <div class="lineDiv"></div>
+                        <h6>Prateek Dash</h6>
+                        <p class="teamMenQuo">"I think there are pleanty of excuses that could be lead to a failures but if you have a one excuse to be a successful, you can change your life."</p>
+                        <p class="teamMenSpeech">
+                            So, Hi i am Prateek, the mind behind the business development and product framing of katalyst and i am here to help the startup ecosystem upto my full potential.
+                        </p>
+                        <div class="teamMenSocial">
+                            <i class="fab fa-instagram" style="padding-right: 15px;"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 teamMem text-center">
+                        <img src="./img/instructors/kul.jpg" alt="">
+                        <div class="lineDiv"></div>
+                        <h6>Kuldeep Sharma</h6>
+                        <p class="teamMenQuo">"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do."</p>
+                        <p class="teamMenSpeech">
+						   Hey, I'm Kuldeep and I'm here to make sure everything works the way it is supposed to work.
+                        </p>
+                        <div class="teamMenSocial">
+                            <i class="fab fa-instagram" style="padding-right: 15px;"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 teamMem text-center">
+                        <img src="./img/instructors/sur.jpeg" alt="">
+                        <div class="lineDiv"></div>
+                        <h6>Suraj Dubey</h6>
+                        <p class="teamMenQuo">"It is impossible to live without failing at something, unless you live so cautiously that you might as well not have lived at all – in which case, you fail by default."</p>
+                        <p class="teamMenSpeech">
+							Hi, I'm Suraj and my aim here is to provide a platform which helps startups and investors to discover each other. 
+                        </p>
+                        <div class="teamMenSocial">
+                            <i class="fab fa-instagram" style="padding-right: 15px;"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- faq -->
+        <div class="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h1>FAQ's</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 faqCont">
+                        <h6><span class="faqContHead">What is katalyst?</span></h6>
+                        <p>Katalyst is a hybrid platform to solve the business problems faced by Startup ecosystem, MSMe sector and desired entrepreneurs by a preference connecting approach.
+                        Experience and know more about it by visit ekatalyst.com
+                        </p>
+                    </div>
+                    <div class="col-sm-6 faqCont">
+                        <h6><span class="faqContHead">What are the features of this platform?</span></h6>
+                        <p>Katalyst is filled with immense of features and has recently launched the investment feature for the investment seeker and investors, where the user get mix of traditional as well as modern approaches of investment procedure at the same platform such as Angel investment, Venture Capitalist Investment, Crowdfunding investment.</p>
+                    </div>
+                    <div class="col-sm-6 faqCont">
+                        <h6><span class="faqContHead">Is this also usable form investor point of view?</span></h6>
+                        <p>Yes, it is very much usable for the investors also due to its investors focusing features, it is one of the most unique, efficient and accurate investment seekers searching platform for the investors form different domain, range, location, type of investment etc.</p>
+                    </div>
+                    <div class="col-sm-6 faqCont">
+                        <h6>How Katalyst protect our crucial details of projects and investment details?</h6>
+                        <p>Katalyst top most concern is to protect and safeguard the crucial details of projects as well as investors crucial details due to which we do not show your crucial details like equity, valuation, revenue models to any one and use this data only to manipulate the search results.   </p>
+                    </div>
+                    <div class="col-sm-6 faqCont">
+                        <h6>How can I connect with any one either investor or investment seeker?</h6>
+                        <p>You can connect with any one by simply select that user profile and press connect button, it will send the notification on the other side and if that user also seeks interest you both will connect with each other and can able to message each other through katalyst messenger.</p>
+                    </div>
+                    <div class="col-sm-6 faqCont">
+                        <h6>Can I able to use more than one investment approach at the same time?</h6>
+                        <p>Yes, the user can take advantage of all the available investment approaches at the same time for an example (the user can go for angel investment and crowdfunding at the same time), but the user have to create a separate sub profile for it in order to appear in its search result also.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="myFooter">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-4">
+                        <h6>Katalyst</h6>
+                        <ul>
+                            <li>
+                                <a href="">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="">Refund Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6>Contact us on</h6>
+                        <li>
+                            Email: 
+                            <a href="">contact@katalyst.com</a>
+                        </li>
+                        <li>
+                            <div class="footerSocialContainer">
+                                <div class="footerSocial">
+                                    <i class="fab fa-instagram"></i>                                        
+                                </div>
+                                <div class="footerSocial">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <div class="footerSocial">
+                                    <i class="fab fa-facebook"></i>                                        
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-sm-4 footerAppDownload">
+                        <h6>Download Our App</h6>
+                        <li>Play Store</li>
+                        <li>App Store</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+    </div>
+    <!-- end of body wrap -->
+
+    <!-- Post load script -->
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/newsAPI.js"></script>
+    <script src="./js/myAnimation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script src="./js/userDashboard.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,498 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+
+       <!-- Styles -->
+    <link rel="stylesheet" href="css/all.min.css">    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/userDashboard.css">
+	<link rel="stylesheet" href="css/newIndex.css">
+    <link rel="stylesheet" href="css/hamburgerMenu.css">
+	<link rel="stylesheet" href="css/admin.css">
+	<link rel="stylesheet" href="css/newProfile.css">
+	<link rel="stylesheet" href="css/admin.css">
+
+    <!-- Pre load javaScript -->
+
+</head>
+<body>
+
+    <!-- This wraps the whole page -->
+    <div id="bodyWrap">
+        <!-- This holds the header -->
+        <header>
+            <nav class="whiteHeader">
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo whiteLogo">
+                  KATALYST
+               </div>
+               <div class="menu" style="margin-right: 35px;">
+                  <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">About</a></li>
+                     <li><a href="#">News</a></li>
+                     <li><a href="#">Contact</a></li>
+                     <li><a href="#">Dashboard</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+        <div class="mainHeadNotification">
+            <i class="fas fa-bell" onclick="showMainNot()"></i>
+            <!-- notification reminder -->
+            <p class="mainHeadNotificationIcon" onclick="showMainNot()">3</p>
+            <!-- this is the real notification box-->
+            <div 
+                class="mainHeadNotificationContainer"
+                id="mainHeadNotificationContainer"
+                style="height: 0px; text-align: center;"
+            >
+                <p>this ia a notification</p>
+                <p>Kuldeep liked your profile.</p>
+                <p>JavaScript sucks!!!</p>
+                <i class="fas fa-times-circle" style="color: #fafafa;" onclick="showMainNot()"></i>                    
+            </div>
+            <!-- end of mainHeadNotificationBox -->
+        </div>
+        <!-- End of  mainHeadNotifiacction-->
+
+    </div>
+    <!-- End of bodyWrap -->
+
+    <div class="mainBody">
+
+        <div class="sideBar">
+            <div class="row justify-content-center align-items-center userProfile">
+                <div class="col-sm-3 text-center">
+                    <img src="./img/instructors/ins2.jpg" alt="">
+                </div>
+                <div class="col-sm-5 text-center">
+                    <p>Suraj Dubey</p>
+                    <p style="font-size: 12px;">Project Manager</p>
+                    <div class="rating">
+						<input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5
+							stars</label>
+						<input type="radio" id="star4" name="rating" value="4" /><label for="star4"
+							title="Pretty good">4 stars</label>
+						<input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3
+							stars</label>
+						<input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2
+							stars</label>
+						<input type="radio" id="star1" name="rating" value="1" /><label for="star1"
+							title="Sucks big time">1 star</label>
+					</div>
+                </div>
+            </div>
+            <!-- end of userProfile -->
+
+            <div class="row justify-content-center" style="margin-top: 30px;">
+                <div class="col-sm-8 text-center">
+                    <button class="viewButton pointer" onclick="window.location.href='#about'">About</button>
+                </div>
+                <div class="col-sm-8 text-center">
+                    <button class="viewButton pointer" onclick="window.location.href='#info'">Track</button>
+                </div>
+                <div class="col-sm-8 text-center">
+                    <button class="viewButton pointer" onclick="window.location.href='#track'">Expectation</button>
+                </div>
+                <div class="col-sm-8 text-center">
+                    <button class="viewButton pointer" onclick="window.location.href='#market'">Investment</button>
+                </div>
+                <div class="col-sm-8 text-center">
+                    <button class="viewButton pointer" onclick="window.location.href='#contact'">Contact</button>
+                </div>
+                <div class="col-sm-8 profileSocialIcon">
+                    <!-- yet not liked -->
+                    <i class="pointer far fa-heart" style="margin-right: 10px; "></i>
+                    <!-- liked -->
+                    <!-- <i class="fas fa-heart"></i> -->
+                    <!-- connect -->
+                    <i class="pointer fas fa-hands-helping" style="margin-right: 10px; "></i>
+                    <!-- messge -->
+                    <i class="pointer fas fa-envelope" style="margin-right: 10px; "></i>
+                    <!-- report -->
+                    <i class="pointer fas fa-ban" style="margin-right: 10px; "></i>
+                </div>
+            </div>
+
+        </div>
+        <!-- end of side bar -->
+
+        <!-- main area -->
+        <div class="mainArea">
+
+            <!-- mainArea 1 -->
+                <div class="mainArea1">
+                    <div id="about" class="row profileIntro">
+                        <!-- project desc -->
+                        <div class="col-sm-6 proDescCont">
+                            <img src="./img/instructors/pro1.jpg" alt="">
+                            <div class="proDesc">
+                                <h2>Some Investor Name</h2>
+                                <p>Group of Investor</p>
+                            </div>
+                        </div>
+                        <!-- project desc end -->
+                        <!-- fouders -->
+                        <div class="col-sm-5">
+                            <div class="fouderProfileCont">
+                                <!-- fouder 1 -->      
+                                <p class="founderHeader"><i class="fas fa-users"></i>Founders</p>                           
+                                <div class="row founderProfile align-items-center">
+                                    <div class="col-sm-1 col-2 text-left" style="padding: 0">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-10 col-8">
+                                        <h3>Prateek Dash<span style="margin: 0 5px;">|</span> <span style="font-size: 14px;"> Manager </span> </h3>
+                                    </div>
+                                </div>
+                                <!-- fouder 2 -->                                
+                                <div class="row founderProfile align-items-center">
+                                    <div class="col-sm-1 col-2 text-left" style="padding: 0">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-10 col-8">
+                                        <h3>Kuldeep Sharma <span style="margin: 0 5px;">|</span> <span style="font-size: 14px;"> Technical </span> </h3>                                        
+                                    </div>
+                                </div>
+                                <!-- fouder 2 -->                                
+                                <div class="row founderProfile align-items-center">
+                                    <div class="col-sm-1 col-2 text-left" style="padding: 0">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-10 col-8">
+                                        <h3>Suraj Dubey<span style="margin: 0 5px;">|</span> <span style="font-size: 14px;"> Technical </span> </h3>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- end of fouders -->
+                    </div>
+                <!-- end of profile intro -->
+                <div id="info" class="teamIntro">
+                    <div class="row align-items-center justify-content-around">
+                        <div class="col-sm-4">
+                            <h2 style="text-align: right;">About the <span style="font-size: 45px; color: #6710f2b6 ; font-weight: 700;margin: 0 5px;">Investor</span></h2>
+                            <p>Some content about the investor. Some content about the investor. Some content about the investor. Some content about the investor. Some content about the investor.</p>
+                        </div>
+                        <div class="col-sm-3 text-left">
+                            <img style="width: 150px;" src="./img/instructors/pair.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-around">
+                        <div class="col-sm-4 text-center">
+                            <img style="width: 90%;" src="./img/instructors/group.jpg" alt="">
+                        </div>
+                        <div class="col-sm-4">
+                            <h2 style="text-align: left;"><span style="font-size: 30px; color: #6710f2b6 ; font-weight: 700;margin: 0 5px;">Story</span> behind the organization</h2>
+                            <p>Some content about the investor Some content about the investor. Some content about the investor. Some content about the investor. Some content about the investor.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of team intro -->
+
+                <div class="whatCont" style="padding-top: 50px; padding-bottom: 0px;">
+                    <div class="row align-items-center justify-content-around">
+                        <div class=" col-sm-4 what">
+                            <h2><span style="font-size: 35px; color: #6710f2b6 ; font-weight: 700;margin: 0 5px;">Specialization</span></h2>
+                            <p>Vision of the project. Vision of the project. Vision of the project. Vision of the project. Vision of the project. Vision of the project. Vision of the project.</p>
+                        </div>
+                        <div class=" col-sm-4 what">
+                            <h2 style="font-size: 20px;"><span style="font-size: 30px; color: #6710f2b6 ; font-weight: 700;margin: 0 5px;">Ocupation </span>are the achievements</h2>
+                            <p>Content about achivements of the product. content about achivements of the product. content about achivements of the product. Content about achivements of the product.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of whatCont -->
+
+                <div class="teamIntro">
+                    <div class="row align-items-center justify-content-around">
+                        <div class="col-sm-4">
+                            <img style="width: 100%;" src="./img/instructors/team.jpg" alt="">
+                        </div>
+                        <div class="col-sm-4">
+                            <h2>Past investment <span style="font-size: 45px; color: #6710f2b6 ; font-weight: 700;margin: 0 5px;">Portfolio</span></h2>
+                            <p>Here is ome text about the ambition. Here is ome text about the ambition. Here is ome text about the ambition. Here is ome text about the ambition. Here is ome text about the ambition.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of team intro -->
+
+                <div id="market" class="sectorCont" style="padding-bottom: 10px;">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p>5 Years</p>
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Experience</p>
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p>1L-10L</p>
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Range</p>
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p>72%</p>
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Success</p>
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                    </div>
+                </div>
+                <!-- end of sectorCont -->
+
+                <div id="market" class="sectorCont" style="padding: 0px 0 20px 0;">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p>Consulting</p>
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Horizontal Sector</p>
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p>Big Data</p>
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Vertical Sector</p>
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p>Web Software</p>
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Platform</p>
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                        <div class="col-sm-3 sector">
+                            <div class="sectorInfo">
+                                <p>B2B</p>
+                            </div>
+                            <div class="sectorHeader">
+                                <p>Business</p> 
+                            </div>
+                        </div>
+                        <!-- end of a sector -->
+                    </div>
+                </div>
+                <!-- end of sectorCont -->
+
+                <div class="teamIntro">
+                    <div class="row align-items-center justify-content-around">
+                        <div class="col-sm-4 text-center">
+                            <img style="width: 200px;" src="./img/instructors/stat.jpg" alt="">
+                        </div>
+                        <div class="col-sm-4">
+                            <h2>Other<span style="font-size: 45px; color: #6710f2b6 ; font-weight: 700;margin: 0 5px;">Expectations</span></h2>
+                            <p>Here is ome text about the ambition. Here is ome text about the ambition. Here is ome text about the ambition. Here is ome text about the ambition. Here is ome text about the ambition.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of team intro -->
+
+                <div class="teamIntro">
+                    <div class="row align-items-center justify-content-around text-right">
+                        <div class="col-sm-4"> 
+                            <h2><span style="font-size: 45px; color: #6710f2b6 ; font-weight: 700;margin: 0 5px;">Investment</span> procedure</h2>
+                            <p>Here is ome text about the ambition. Here is ome text about the ambition. Here is ome text about the ambition. Here is ome text about the ambition. Here is ome text about the ambition.</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img style="width: 100%;" src="./img/instructors/join.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- end of team intro -->
+
+                <div id="investment" class="sectorCont" style="padding-bottom: 50px;">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-sm-5">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-sm-10 sector">
+                                    <div class="sectorInfo">
+                                        <p>Mentorship</p>
+                                    </div>
+                                    <div class="sectorHeader" style="padding-left: 40px; padding-right: 40px;">
+                                        <p>Type of Investment</p>
+                                    </div>
+                                </div>
+                                <!-- end of a sector -->
+                                <div class="col-sm-10 sector">
+                                    <div class="sectorInfo">
+                                        <p>25%</p>
+                                    </div>
+                                    <div class="sectorHeader" style="padding-left: 40px; padding-right: 40px;">
+                                        <p>Range of investment</p>
+                                    </div>
+                                </div>
+                                <!-- end of a sector -->
+                                <div class="col-sm-10 sector">
+                                    <div class="sectorInfo">
+                                        <p>10k-100k</p>
+                                    </div>
+                                    <div class="sectorHeader">
+                                        <p>Return of Equity</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-10 sector">
+                                    <div class="sectorInfo">
+                                        <p>10k-100k</p>
+                                    </div>
+                                    <div class="sectorHeader">
+                                        <p>Range of Valuation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <img style="height: 350px;" src="./img/instructors/women.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- contact -->
+                <div id="contact" class="contact text-center" >
+                    <h2 style="padding-bottom: 40px;">Contact</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 text-center">
+                            <h2>Phone No.</h2>
+                            <p>
+                            <i  style="margin-right: 10px" class="fa fa-phone" aria-hidden="true"></i>
+                            9911526232</p>
+                        </div>
+                        <div class="col-sm-4 text-center">
+                            <h2>Email</h2>
+                            <p>
+                            <i style="margin-right: 10px" class="fa fa-envelope"></i>
+                            email@mail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- only foe mobile -->
+                <div class="mobile downBarContainer">
+                    <!-- always on menu -->
+                    <div class="alwaysOnDownBarContainer">
+                        <div class="alwaysOnDownBar">
+                                <ul>
+                                    <div class="row">
+                                        <div class="col-3 text-center">
+                                            <!-- yet not liked -->
+                                            <li>
+                                                <i class="pointer far fa-heart" ></i>
+                                                <!-- liked -->
+                                                <!-- <i class="fas fa-heart"></i> -->
+                                            </li>
+                                        </div>
+                                        <div class="col-3 text-center">
+                                            <li>
+                                                <!-- connect -->
+                                                <i class="pointer fas fa-hands-helping"></i>
+                                            </li>
+                                        </div>
+                                        <div class="col-3 text-center">
+                                            <li>
+                                                <!-- messge -->
+                                                <i class="pointer fas fa-envelope" ></i>
+                                            </li>
+                                        </div>
+                                        <div class="col-3 text-center">
+                                            <li>
+                                                <!-- report -->
+                                                <i class="pointer fas fa-ban" ></i>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </ul>
+                        </div>
+                    </div>
+                    <!-- end of alwaysOn -->
+                    <div class="openNavRoundButton" id="openNavRoundButton">
+                        <!-- only for css -->
+                        <!-- open and close button for down menu -->
+                        <i class="openNavRound fas fa-arrow-up" onclick="openCloseDownNav()"></i>
+
+                        <div class="downMenuProfile">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-4 text-center">
+                                    <img src="./img/instructors/ins1.jpg" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <h6 style="margin-top: 20px;">Suraj Dubey</h6>
+                                    <p>Projecj Manager</p>
+                                    <div class="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5
+                                            stars</label>
+                                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4"
+                                            title="Pretty good">4 stars</label>
+                                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3
+                                            stars</label>
+                                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2
+                                            stars</label>
+                                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1"
+                                            title="Sucks big time">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainDownMenuContainer">
+                            <ul>
+                                <li>
+                                    <button class="viewButton pointer" onclick="window.location.href='#about'">About</button>
+                                </li>
+                                <li>
+                                    <button class="viewButton pointer" onclick="window.location.href='#about'">Track</button>
+                                </li>
+                                <li>
+                                    <button class="viewButton pointer" onclick="window.location.href='#about'">Expectation</button>
+                                </li>
+                                <li>
+                                    <button class="viewButton pointer" onclick="window.location.href='#about'">Investment</button>
+                                </li>
+                                <li>
+                                    <button class="viewButton pointer" onclick="window.location.href='#about'">Contact</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+           </div>
+            <!-- end of mainArea1 -->
+
+        </div>
+        <!-- end of main area -->
+
+    </div>
+    <!-- end of main body -->
+
+    <!-- Post Load javaScript -->
+    <script src="./js/userDashboard.js"></script>
+    <script src="./js/newProfile.js"></script>
+
+
+</body>
+</html>

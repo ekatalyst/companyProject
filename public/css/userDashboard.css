@@ -1,0 +1,620 @@
+
+/* Global Style */
+/* ===================================================== */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace ;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;;
+}
+
+#bodyWrap{
+    overflow: hidden;
+    background: var(--white);
+    font-family: sans-serif;
+}
+
+/* Header Area Style */
+/* ===================================================== */
+
+.headArea{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.headBar{
+    padding: 0 0px;
+}
+
+/* header notification  */
+
+.mainHeadNotification {
+    font-size: 25px;
+    padding: 10px 30px;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.mainHeadNotificationIcon {
+    position: relative;
+    top: -38px;
+    right: -10px;
+    text-align: center;
+    background: #dc3545;
+    border-radius: 50%;
+    font-size: 14px;
+    height: 15px;
+    padding: 2.5px 0;
+    width: 20px;
+    color: #fafafa;
+    z-index: 100000;
+}
+#mainHeadNotificationContainer{
+    transition: 300ms;
+}
+
+.mainHeadNotificationContainer{
+    /* this is to hide it by default */
+    width: 220px;
+    max-height: 400px;
+    position: absolute;
+    top: 70px;
+    right: 25px;
+    overflow: hidden;
+    transition:  400ms;
+    background: #6710f2ce;
+    border-radius: 15px;
+}
+
+.mainHeadNotificationContainer p{
+    background: #fafafa;
+    padding: 10px 20px;
+    margin: 10px 0;
+    height: auto;
+    text-align: justify;
+    border-radius: 14px;
+    max-height: 50px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.mainHeadNotificationContainer p:hover{
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.mainHeadNotificationContainer p{
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+
+
+/* Gloabl for main area */
+/* ===================================================== */
+
+.mainArea{
+    display: flex;
+    position: absolute;
+    top: 72px;
+    width: 100% !important;
+    margin: 0 !important; 
+    margin-top: 0px !important;
+}
+
+/* Sidebar Style */
+/* ===================================================== */
+
+.sideBar{
+    padding-top: 0px;
+    width: 250px;
+    margin: 0 !important;
+    height: calc(100vh - 80px);
+    background: #dbdcdd;
+}
+
+.sideBarMainMenu{
+    padding:  0 20px;
+}
+
+.sideBarMainMenu nav{
+    padding: 30px 0;
+}
+
+.sideBarMainMenu nav ul li{
+    padding: 0px 40px 0 40px !important;
+    margin: 10px 0;
+    color: #c0c0c0;
+    border-radius: 30px;
+    transition: 300ms;
+    display: flex;
+    width: 150px;
+    background: #6610f2;
+    align-items: center;
+    cursor: pointer;
+    width: 200px !important;
+}
+
+.sideBarMainMenu nav ul li a{
+    margin-left: 5px;
+}
+
+
+.sideBarMainMenu .active{
+    color: #fafafa;
+}
+
+.sideBarMainMenu nav ul li:hover {
+    background: #6710f2ab;
+    color: #fafafafa;
+}
+
+.mainSettingSubSettingContainer{
+    /* position reltive of parent from inline css */
+    position: relative;
+    top: -20px;
+    left: 0px;
+    width: 200px !important;
+    z-index: 1000 !important;
+    transition: 300ms;
+    overflow: hidden;
+}
+
+.mainSettingSubSettingContainer p{
+    font-size: 14px;
+    color: #6610f2;
+    transition: 300;
+    text-align: left;
+    margin: 15px 0 0 0;
+    height: 20px !important;
+}
+
+.mainSettingSubSettingContainer p:hover{
+    color: #7349cc8e;
+}
+
+
+
+/* Main content area style */
+/* ===================================================== */
+
+.mainContentArea{
+    width: calc(100% - 250px);
+    height: calc(100vh - 80px);
+    background: #f1f2f3;
+}
+
+/* This is for first main content box */
+
+.mainContentBox1{
+    /* this is to show or hide the box */
+    /* height: calc(100% - 80px) ; */
+    overflow: hidden;
+    transition: height 300ms;
+}
+
+.sideBarMainMenu nav{
+    max-width: 250px;
+    box-shadow: none;
+}
+
+.userMainProfile{
+}
+
+.userMainProfileHead{
+    background: linear-gradient(to right, #7349cc 0%, #007bffc0 100%);
+    padding: 20px 30px;
+    line-height: 35px;
+    color: #f8f9fa;
+
+}
+
+.userMainProfileDetail{
+    padding: 20px 30px 50px 30px;
+    box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.151);
+}
+
+.userMainProfileDetailHeader{
+    background: #6610f2;
+    padding: 15px 20px 15px 30px;
+    /* width: calc(100% - 40px); */
+    color: #fafafa;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userMainProfileDetailHeader h3{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.userMainProfileDetailHead{
+    background: #c0c0c0;
+    border-radius: 30px;
+    background: linear-gradient(to right, #7349cc88 0%, #007bff88 100%);
+    margin: 10px 0;
+    padding: 20px 20px 20px 30px;
+    position: relative;
+}
+
+.userMainProfileDetailHead h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.userMainProfileDetailHead p{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.userMainProfileDetailEditButton{
+    padding: 5px 10px;
+    color: #fafafa;
+    background: none;
+    border: none;
+}
+
+.userMainProfileDetailEditButton:hover{
+    border: 1px solid #fafafa;
+    padding: 4px 9px;
+}
+
+/* ================================================================== */
+/* this is the second main box */
+
+.mainContentBox2{
+    height: 0px;
+    /* to show and hide the box */
+    overflow: hidden;
+    transition: height 300ms;
+}
+
+.userProfilesContainer{
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: #fafafa;
+}
+
+.userProfilesContainerHeader{
+    padding: 20px 30px;
+    background: linear-gradient(to right, #7349cc 0%, #007bff 100%);
+
+}
+
+.userProfilesContainerHeader h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fafafa;
+    letter-spacing: 1px;    
+}
+
+.userProfilesContainerMain{
+    padding: 60px 30px;
+    width: calc(100% - 60px);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.userProfilesBox{
+    width: 300px;
+    height: 370px;
+    background: #f8f9fa;
+    margin: 0 10px;
+    background-color: #007ea7;
+    background-image: linear-gradient(315deg, #007ea7 0%, #80ced7 74%);
+    background: linear-gradient(to right, #7349cc91 0%, #007bff8e 100%);    
+    position: relative;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.userProfilesBoxRow1{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: relative;
+}
+.userProfilesBoxRow1Column1{
+    width: 100px;
+}
+
+.userProfilesBoxRow1Column1 img{
+    height: 100px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.userProfilesBoxRow1Column2 {
+    width: 300px;
+    text-align: center;
+    color: #fafafa;
+    font-size: 20px;
+}
+
+.userProfilesBoxRow2{
+    color: rgba(0, 0, 0, 0.8);
+    text-align: justify;
+    padding: 10px 20px;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.userProfilesBoxRow3{
+    padding: 15px 30px;
+    text-align: center;
+    background: #7349ccbb;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    position: absolute;
+    bottom: 60px;
+    width: calc(100% - 0px);
+}
+
+.userProfilesBoxRow4{
+    padding: 20px 30px;
+    text-align: center;
+    width: calc(100% - 0px);
+    position: absolute;
+    bottom: 0;
+    color: #fafafa;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background: #6610f2;
+}
+
+.userProfilesEditButton{
+    background: #6610f2;
+    color: #fafafa;
+    border: none;
+    padding: 10px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.userProfilesEditButton:hover{
+    padding: 12px;
+}
+
+/* End of main box 2 */
+
+/* ========================================================================= */
+/* this is main box 3 */
+
+.mainContentBox3{
+    /* this is to show or hode the box */
+    height: calc(100vh - 80px);
+    height: 0px;
+    overflow: hidden;
+    transition: height 300ms;
+}
+
+.notificationContainer{
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+}
+
+.notificationContainerHeader{
+    background: linear-gradient(to right, #7349cc 0%, #007bff 100%);
+    padding: 20px 30px;
+}
+
+.notificationContainerHeader h3{
+    color: #fafafa;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.notificationContainerMain{
+    padding: 30px 30px;
+}
+
+.notificationBox{
+    width: calc(100% - 40px);   
+    margin-bottom: 30px;
+    background-color: #007ea7;
+    background-image: linear-gradient(315deg, #007ea7 0%, #80ced7 74%);
+    background: linear-gradient(to right, #7349cc8e 0%, #007bff85 100%);    
+    padding: 20px;
+    position: relative;
+}
+
+.notification h2{
+    color: #fafafa;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.notification p{
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 25px;
+}
+
+.openExpandNotification{
+    height: auto;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+ 
+.closeExpandNotification{
+    /* this is to shoew or hide the notifiaction */
+    padding-bottom: 30px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* for box notification one */
+#expandNotification1{
+    /* display: block; */
+}
+
+#expandNotification2{
+    /* display: none; */
+}
+
+#expandNotification3{
+    /* display: none; */
+}
+
+.openExpandNotifiactionButton,
+.closeExpandNotifiactionButton{ 
+    position: absolute;
+    bottom: -13px;
+    left: 48%;
+    border-radius: 50%;
+    border: none;
+    background: #6710f2c5;
+    color: #fafafa;
+    padding: 9px 10px 6px 10px;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
+    outline: none;
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.openExpandNotifiactionButton:hover,
+.closeExpandNotifiactionButton:hover{ 
+    box-shadow: 0 0  2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.closeExpandNotifiactionButton{ 
+    transform: rotate(0deg);
+}
+
+.closeNotification{
+    font-size: 16px;
+    padding: 2px 4px;
+    background: none;
+    color: #fafafa;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+@media(max-width: 768px){
+
+    .mainArea{
+        width: 100vw;
+        top: 72px;
+    }
+
+    .sideBar{
+        display: none;
+    }
+
+    .mainContentArea{
+        width: 100%;
+    }
+
+    .mainContentBox1{
+        height: auto;
+        padding-bottom: 50px;
+        background: #fafafa;
+    }
+
+    .mainContentBox2{
+        overflow-y: scroll;
+    }
+
+    .userMainProfileDetailHeader{
+        width: 100% !important;
+    }
+
+    .userProfilesContainerMain{
+        width: 100%;
+    }
+
+    .userProfilesBoxRow3{
+        width: 100%;
+    }
+
+    .userProfilesBoxRow4{
+        width: calc(100% - 0px)
+    }
+
+    .userProfilesBox{
+        margin-bottom: 60px;
+    }
+
+    .userProfilesContainer{
+        height: calc(100vh - 60px);
+    }
+
+    .notificationBox{
+        width: 100%;
+    }
+
+    .mainContentBox3{
+        overflow: auto;
+    }
+
+    .notificationContainerMain{
+        padding-bottom: 100px;
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,141 @@
+/* admin css */
+
+/* global */
+
+.pointer{
+    cursor: pointer;
+}
+
+.mainHeadNotificationIcon {
+    padding-top: 3px;
+    padding-bottom: 1px;
+}
+
+.mainContentBox1{
+    height: 100%;
+}
+
+/* stats */
+
+.userStatCont{
+    padding: 40px 60px;
+}
+
+.userStat{
+    padding: 40px;
+    text-align: center;
+    color: #fafafa;
+    border-radius: 35px;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.219);
+    filter: blur()
+}
+
+.userStat{
+    background: linear-gradient(to right, #7349ccab 0%, #007bff59 100%);        
+}
+
+.userStat p{
+    margin: 10px;
+    padding: 10px 20px;
+    background: #fafafa3a;
+    max-width: 100px;
+    margin: 20px auto  0 auto;
+    border-radius: 8px;
+}
+
+.profileStatCont, .webStatCont{
+    background: #fafafa3b;
+    padding: 20px 30px;
+    border-radius: 15px;
+    color: #3b3b3b;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.082);
+
+}
+
+.profilesStat{
+    background: linear-gradient(to right, #7349ccab 0%, #007bff59 100%);        
+    margin: 10px 0; 
+    padding: 10px 20px;    
+    color: #fafafa;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.219);
+}
+
+.webStatus{
+    height: 150px;
+    width: calc( 100% - 20px);
+    margin: 20px 10px;
+    background: #6c757d6e;
+}
+
+/* second box */
+
+.userSearch input{
+    background: #fafafa49;
+    color: #fafafa;
+    padding: 7px 20px;
+    width: 150px;
+    border: none;
+    outline-color: #6710f279;
+    margin-right: 15px;
+}
+
+.userSearch input::placeholder{
+    color: #fafafa9d;
+}
+
+.profileContHeader{
+    background: #6710f29a;
+    padding: 20px 30px;
+    color: #fafafa;
+}
+
+.userRow{
+    margin: 20px 0;
+    background: linear-gradient(to right, #7349ccab 0%, #007bff59 100%);        
+    color: #fafafa;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.219);
+}
+
+
+.userRow img{
+    height: 60px;
+}
+
+.userRow p{
+    font-size: 18px;
+}
+
+.editUsers{
+    transition: 300ms;
+}
+
+.editUsers :hover{
+    color: red;
+}
+
+.sideBarMainMenu ul li {
+    width: 180px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eKatalyst</title>
+
+    <!--about meta -->
+    <meta name="theme-color" content="#6610f2">
+    <link rel="icon" href="/img/instructors/call.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/newProfile.css">
+    <link rel="stylesheet" href="/css/news.css">
+    <link rel="stylesheet" href="/css/newIndex.css">
+
+    <!-- Pre load script -->
+
+</head>
+<body>
+    
+    <div class="bodyWrap" id="bodyWrap">
+
+        <header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  eKATALYST
+               </div>
+               <div class="menu">
+                  <ul>
+                      <li><a href="/">Home</a></li>
+                     <li><a href="/about-us">About</a></li>
+                     <li><a href="/news">News</a></li>
+                     <li><a href="/contact">Contact</a></li>
+                     <li><a href="/dash">Dashboard</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+        <div class="mainHeadNotification">
+            <i class="fas fa-bell" onclick="showMainNot()"></i>
+            <!-- notification reminder -->
+            <p class="mainHeadNotificationIcon" onclick="showMainNot()">3</p>
+            <!-- this is the real notification box-->
+            <div 
+                class="mainHeadNotificationContainer"
+                id="mainHeadNotificationContainer"
+                style="height: 0px; text-align: center;"
+            >
+                <p>Welcome to eKtalyst</p>
+                <p>Nothing else to show</p>
+                <i class="fa fa-times-circle" style="color: #fafafa;" onclick="showMainNot()"></i>                    
+            </div>
+            <!-- end of mainHeadNotificationBox -->
+        </div>
+        <!-- End of  mainHeadNotifiacction-->
+
+
+        <!-- jumbotron one -->
+        <div class="jumboOne jumbotron jumbotron-fluid newIndexBack" style="margin-bottom: 0px;">
+            <div class="container">
+                <div class="row jumboOneData">
+                    <div class="col-sm-7 ">
+                        <div id="bannerTextSlide" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" >
+                                    <h1 class="display-4" style="font-size: 40px; padding: 10px 0;">Whether you think you can, or you think you can’t, you’re right.</h1>
+                                </div>
+                                <div class="carousel-item">
+                                    <h1 class="display-4"  style="font-size: 40px; padding: 10px 0;">Vision without execution is a hallucination.</h1>
+                                </div>
+                                <div class="carousel-item">
+                                    <h1 class="display-4"  style="font-size: 40px; padding: 10px 0;">It matters not what someone is born, but what they grow to be.</h1>
+                                </div>
+                                <div class="carousel-item" >
+                                    <h1 class="display-4" style="font-size: 40px; padding: 10px 0;">Start small, nail it and then make it big.</h1>
+                                </div>
+                            </div>                
+                        </div>
+                                    <p class="lead">Search Latest Projects and Profiles</p>
+
+                        <div class="search_course_wrap">
+                            <form action="" class="form_box d-flex justify-content-between w-100">
+                                <div class="searchFormContainer">
+                                    <input type="text" placeholder="Search Here!" class="form-control searchForm" name="username" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = 'Search Courses'">
+                                    <button type="submit" class="btn search_course_btn searchFormButton" >
+                                        <a href="./filterResult.html" style="color: #fafafa; text-decoration: none;">Search</a>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 ">
+                        <div id="bannerImageSlide" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="jumboOneImage" src="/img/instructors/jumbo1.png" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="jumboOneImage" src="/img/instructors/boy2.png" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="jumboOneImage" src="/img/instructors/girl1.png" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="jumboOneImage" src="/img/instructors/girl2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- three item box -->
+        <div class="threeBoxRow">
+            <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4">
+                    <div class="card boxBgColor lax" data-lax-preset=" driftRight-30 fadeInOut-.1">
+                        <div class="card-body threeBoxBody">
+                            <span class="fa fa-trophy threeBoxIcon"></span>
+                            <h5 class="card-title">New Experiences to Raise Investment</h5>
+                            <p class="card-text">We give you all new experience to raise investment according to your preferences. </p>
+                            <a href="#" class="btn btn-primary threeBoxButton">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card boxBgColor lax threeBoxBodyMid" data-lax-preset="fadeInOut-.1">
+                        <div class="card-body threeBoxBody">
+                            <i class="fas fa-book threeBoxIcon"></i>
+                            <h5 class="card-title">Explore New Projects</h5>
+                            <p class="card-text">Explore all new opotunities and authenticate projects of investors preferred domain.</p>
+                            <a href="#" class="btn btn-primary threeBoxButton">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card boxBgColor lax" data-lax-preset=" driftLeft-30 fadeInOut-.1">
+                        <div class="card-body threeBoxBody">
+                            <i class="fas fa-rocket threeBoxIcon"></i>
+                            <h5 class="card-title">Boost Startups</h5>
+                            <p class="card-text">Find all the services that help turning an idea into a startup. Explore enormous opportunities to boost your startup.</p>
+                            <a href="#" class="btn btn-primary threeBoxButton">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!--three feature row  -->
+        <div class="threeFeatureRow vibeBgColor">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 threeFeatureContainerHead">
+                        <h2>
+                            Our Services
+                        </h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center ">
+                    <div class="col-sm-4justify-content-center threeFeatureBar">
+                        <i class="fas fa-sort-up click-able" style="transform: rotate(270deg); margin-right: 8px;"></i>                            
+                        <h6>Investment</h6>
+                        <i class="fas fa-sort-up click-able" style="transform: rotate(90deg); margin-left: 10px;"></i>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 justify-content-center">
+                        <div class="threeFeature lax" data-lax-preset=" fadeInOut-.1" onclick="showFullToggleBox(1)">
+                            <img src="/ICONS/angel.png" alt="">
+                            <h4>Angel <br> Investment</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 justify-content-center">
+                        <div class="threeFeature lax" data-lax-preset=" fadeInOut-.1" onclick="showFullToggleBox(2)">
+                            <img src="/ICONS/capital.png" alt="">
+                            <h4>Venture <br> Capital</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 justify-content-center">
+                        <div class="threeFeature lax" data-lax-preset=" fadeInOut-.1" onclick="showFullToggleBox(3)">
+                            <img src="/ICONS/network.png" alt="">
+                            <h4>Crowd <br> Funding</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- toggle boxes -->
+        <!-- thes box appears when three feature row box are visited -->
+        <!-- box 1 -->
+        <div id="fullToggleBoxContainer1" class="fullToggleBoxContainer">
+            <div class="container">
+                <div class="row justify-content-center align-items-center"> 
+                    <div class="col-sm-6 fullToggleBox">
+                        <i class="fas fa-window-close fullToggleBoxIcon" onclick="showFullToggleBox(1)"></i>
+                        <div class="row justify-content-around">
+                            <div class="col-sm-10 text-center">
+                                <img src="./img/instructors/asking.png" alt="" style="padding-bottom: 20px;">
+                                <h2>Whom you are represting?</h2>
+                            </div>
+                            <div class="col-8 col-sm-6 text-center">
+                                <a href="/userform2" class="btn btn-primary threeBoxButton fullToggleBoxButton">Investor</a>
+                            </div>
+                            <div class="col-8 col-sm-6 text-center">
+                                <a href="/userform" class="btn btn-primary threeBoxButton fullToggleBoxButton">Investment Seeker</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- box 1 -->
+        <div id="fullToggleBoxContainer2" class="fullToggleBoxContainer">
+            <div class="container">
+                <div class="row justify-content-center align-items-center"> 
+                    <div class="col-sm-6 fullToggleBox">
+                        <i class="fas fa-window-close fullToggleBoxIcon" onclick="showFullToggleBox(2)"></i>
+                        <div class="row justify-content-around">
+                            <div class="col-sm-10 text-center">
+                                <img src="./img/instructors/asking.png" alt="" style="padding-bottom: 20px;">
+                                <h2>Whom you are represting?</h2>
+                            </div>
+                            <div class="col-4 col-sm-6 text-center">
+                                <a href="/userform5" class="btn btn-primary threeBoxButton fullToggleBoxButton">Investor</a>
+                            </div>
+                            <div class="col-4 col-sm-6 text-center">
+                                <a href="/userform3" class="btn btn-primary threeBoxButton fullToggleBoxButton">investment Seeker</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- box 3 -->
+        <div id="fullToggleBoxContainer3" class="fullToggleBoxContainer">
+            <div class="container">
+                <div class="row justify-content-center align-items-center"> 
+                    <div class="col-sm-6 fullToggleBox">
+                        <i class="fas fa-window-close fullToggleBoxIcon" onclick="showFullToggleBox(3)"></i>
+                        <div class="row justify-content-around">
+                            <div class="col-sm-10 text-center">
+                                <img src="./img/instructors/asking.png" alt="" style="padding-bottom: 20px;">
+                                <h2>Whom you are represting?</h2>
+                            </div>
+                            <div class="col-4 col-sm-6 text-center">
+                                <a href="/prefcr" class="btn btn-primary threeBoxButton fullToggleBoxButton">Donor</a>
+                            </div>
+                            <div class="col-4 col-sm-6 text-center">
+                                <a href="/userform4" class="btn btn-primary threeBoxButton fullToggleBoxButton">Donation Seeker</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- two box -->
+        <div class="twoBoxRow">
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="col-sm-4">
+                        <img style="width: 400px; margin-top: 50px;" src="/img/instructors/c3.png" alt="" class="lax" data-lax-preset="driftRight-30 fadeInOut-.1">
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-10 twoBoxRowButtonCont">
+                                <button id="homeButton1" style="background: #6710f2c4; color: #fafafa; border: 1px #6710f2c4 solid;" onclick="showTwoBox1()">Our Offering</button>
+                                <button id="homeButton2" onclick="showTwoBox2()">Our Specialities</button>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="col-sm-12 twoBoxRowCont" id="ourOff">
+                                <p class="lax" data-lax-preset="driftLeft-30 fadeInOut-.1" style="margin: 0 auto;">We give you a platform to build and raise investment for your startups, big business and social cause project, we bring all the distributed platform into a one hybrid platform with affordable services and data and Idea security. The idea is to add value into the society and boost the start-up ecosystem by resolving the various business problems such as Investment, Legal Solution, Jobs/Recruitment, Working Space & Advertisement faced by early stage start-ups, Microbusiness and Venture Capital Requirement firms by giving a structural as well as hybrid platform to them.</p>
+                            </div>
+                            <div class="col-sm-12 twoBoxRowCont" id="ourSp">
+                                <p class="lax" data-lax-preset="driftLeft-30 fadeInOut-.1">We found the main problem is that, in this booming startups ecosystem still there is no structural dedicated platform for start-ups, Small independent projects, MSME sector which can solve their business problems and connect them with their solutions. We create a one-step solution for all the challenges you face to turn an idea into a big business, The needs like investment, co-working space, legal hurdles and many more is not easy to understand and solve for a student or a fresher in industry due to which a potential idea did not get its place in the market.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- reviews -->
+        <div class="reviewRow vibeBgColor">
+            <div class="container">
+                <h2>Our Customers</h2>
+                <div 
+                    class="row justify-content-center align-items-center lax"
+                    data-lax-anchor="self"
+                    data-lax-opacity="0 1, 100 1, 200 0.9, 250 0.9, 300 0.9, 350 0.4, 370 0.2, 400 0.1"
+                >
+                    <div class="col-sm-1 text-center">
+                        <i class="fas fa-sort-up click-able" style="transform: rotate(270deg);"></i>                            
+                    </div>
+                    <div class="col-sm-6 text-center" >
+                        <img src="/img/instructors/pra.jpg" alt="">
+                        <h6 class="lax" data-lax-preset="fadeInOut">Prateek Dash</h6>
+                        <p>
+                            Hi i am Prateek, the mind behind the business development and product framing of katalyst and i am here to help the startup ecosystem upto my full potential.
+                        </p>
+                    </div>
+                    <div class="col-sm-1 text-center">
+                        <i class="fas fa-sort-up click-able" style="transform: rotate(90deg);"></i>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- news -->
+        <div class="newsRow">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 text-center">
+                        <h1>Latest News</h1>
+                        <p style="color: #c0c0c0; font-size: 15px">Souce: NEWS.ORG</p>
+                    </div>
+                    <div 
+                        class="row justify-content-around lax testNews" 
+                        data-lax-anchor="self" 
+                        data-lax-translate-y=" 0 0, 100 0, 150 0, 200 0, 250 10, 300 40, 350 80, 400 150" 
+                        data-lax-opacity="0 1, 100 0.9, 200 0.9, 300 0.7, 350 0.3, 400 0"
+                    >
+                        <!-- the data of news comes from external api -->
+                    </div>
+                    <button class="moreNewsMain">
+                        <a href="./news.html" style="color: #3b3b3b; text-decoration: none;">More</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="myFooter">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-4">
+                        <h6>Katalyst</h6>
+                        <ul>
+                            <li>
+                                <a href="">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="">Refund Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h6>Contact us on</h6>
+                        <li>
+                            Email: 
+                            <a href="">contact@katalyst.com</a>
+                        </li>
+                        <li>
+                            <div class="footerSocialContainer">
+                                <div class="footerSocial">
+                                    <i class="fab fa-instagram"></i>                                        
+                                </div>
+                                <div class="footerSocial">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <div class="footerSocial">
+                                    <i class="fab fa-facebook"></i>                                        
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="col-sm-4 footerAppDownload">
+                        <h6>Download Our App</h6>
+                        <li>Play Store</li>
+                        <li>App Store</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+    </div>
+    <!-- end of body wrap -->
+
+    <!-- Post load script -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/newsAPI.js"></script>
+    <script src="/js/myAnimation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script src="/js/userDashboard.js"></script>
+
+
+</body>
+</html>

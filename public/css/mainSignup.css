@@ -1,0 +1,33 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.signupTypeWrap{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signupType{
+    padding: 200px 50px;
+    color: #fafafa;
+    height: calc(100vh - 0px);
+}
+
+.signupTypeContainer h5{
+    padding: 50px 0;
+}
+
+.signupTypeSubContainer img{
+    width: 60px;
+    height: 60px;
+}
+
+.signupTypeSubContainer p{
+    color: #fafafa;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 0;
+    letter-spacing: 1px;
+}

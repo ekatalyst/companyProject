@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News</title>
+</head>
+
+   <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">    
+	<link rel="stylesheet" href="css/userDashboard.css">
+	<link rel="stylesheet" href="css/newIndex.css">
+	<link rel="stylesheet" href="css/admin.css">
+	<link rel="stylesheet" href="css/newProfile.css">
+	<link rel="stylesheet" href="css/admin.css">
+	<link rel="stylesheet" href="css/news.css">
+
+<body>
+    
+
+    <div id="bodyWrap">
+
+         <header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x menuOpenIcon" style="margin-top: 15px; color: #007bff;"></i>
+               </div>
+               <div class="logo" style="color: #007bff;">
+                  KATALYST
+               </div>
+               <div class="menu">
+                  <ul>
+                      <li><a href="/">Home</a></li>
+                     <li><a href="/about-us">About</a></li>
+                     <li><a href="/news">News</a></li>
+                     <li><a href="/contact">Contact</a></li>
+                     <li><a href="/dash">Dashboard</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+        <div class="mainHeadNotification">
+            <i class="fas fa-bell" onclick="showMainNot()"></i>
+            <!-- notification reminder -->
+            <p class="mainHeadNotificationIcon" onclick="showMainNot()">2</p>
+            <!-- this is the real notification box-->
+            <div 
+                class="mainHeadNotificationContainer"
+                id="mainHeadNotificationContainer"
+                style="height: 0px; text-align: center;"
+            >
+                <p>Welcome to eKtalyst</p>
+                <p>Nothing else to show</p>
+                <i class="fa fa-times-circle" style="color: #fafafa;" onclick="showMainNot()"></i>                    
+            </div>
+            <!-- end of mainHeadNotificationBox -->
+        </div>
+        <!-- End of  mainHeadNotifiacction-->
+
+        <div class="newsWrap">
+            <div class="container">
+                <div class="row align-items-center justify-content-center newsHead">
+                    <div class="col-sm-3">
+                        <h1>NEWS</h1>
+                    </div>
+                </div>
+                <!-- end of row -->
+                <div id="newsContainer" class="row align-items-center justify-content-around newsContainer">
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end of body wrap -->
+
+    <!-- Post Load javaScript -->
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/myAnimation.js"></script>
+    <script src="./js/mainNews.js"></script>
+
+</body>
+</html>

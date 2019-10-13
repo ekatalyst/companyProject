@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Styles -->
+	<link rel="stylesheet" href="css/userDashboard.css">
+	<link rel="stylesheet" href="css/all.min.css">    
+	<link rel="stylesheet" href="css/bootstrap.min.css">    
+	<link rel="stylesheet" href="css/userDashboard.css">
+    <link rel="stylesheet" href="css/hamburgerMenu.css">
+    <link rel="stylesheet" href="./css/newIndex.css">
+	<link rel="stylesheet" href="css/admin.css">
+
+    <!-- Pre load javaScript -->
+
+    <title>Admin</title>
+</head>
+<body>
+    <!-- This wraps the whole page -->
+    <div id="bodyWrap">
+        <!-- This holds the header -->
+        <header>
+            <nav class="whiteHeader">
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo whiteLogo">
+                  KATALYST
+               </div>
+               <div class="menu" style="margin-right: 35px;">
+                  <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">About</a></li>
+                     <li><a href="#">News</a></li>
+                     <li><a href="#">Contact</a></li>
+                     <li><a href="#">Dashboard</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+            <div class="mainHeadNotification">
+                <i class="fas fa-bell" onclick="showMainNot()"></i>
+                <!-- notification reminder -->
+                <p class="mainHeadNotificationIcon" onclick="showMainNot()">3</p>
+                <!-- this is the real notification box-->
+                <div 
+                    class="mainHeadNotificationContainer"
+                    id="mainHeadNotificationContainer"
+                    style="height: 0px; text-align: center;"
+                >
+                    <p>this ia a notification</p>
+                    <p>Kuldeep liked your profile.</p>
+                    <p>JavaScript sucks!!!</p>
+                    <i class="fas fa-times-circle" style="color: #fafafa;" onclick="showMainNot()"></i>                    
+                </div>
+                <!-- end of mainHeadNotificationBox -->
+            </div>
+            <!-- End of  mainHeadNotifiacction-->
+        
+        <!-- This is the main section containing sidebar and content -->
+        <div id="mainArea" class="mainArea">
+
+            <!-- This is the side menu bar -->
+            <div class="sideBar">
+                <div class="sideBarMainMenu">
+                    <nav>
+                        <ul>
+                            <li class="active" onclick="toggleBox(1)">
+                                <i class="fas fa-home"></i>
+                                <a >Home</a>
+                            </li>
+                            <li onclick="toggleBox(2)">
+                                <i class="fas fa-user"></i>
+                                <a >Profiles</a>
+                            </li>
+                            <li onclick="toggleBox(3)">
+                                <i class="fas fa-user"></i>
+                                <a >Notifications</a>
+                            </li>
+                            <li style="position: relative;">
+                                <i class="fas fa-cog" onclick="showMainSettings()"></i>
+                                <a style="cursor: pointer;" onclick="showMainSettings()">Settings</a>
+                                <div 
+                                    class="mainSettingSubSettingContainer"
+                                    id="mainSettingSubSettingContainer"    
+                                    style="height:0px;"
+                                >
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-user-secret"></i>
+                                            <a href="">Privacy</a>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-question"></i>
+                                            <a href="">Help</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- end of mainSettingSubSettingContainer -->
+                            </li>
+                            <!-- end of setting -->
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end of side bar main menu -->
+            </div>
+            <!-- end of side bar -->
+
+            <!-- This is the main content area -->
+            <div class="mainContentArea">
+
+                <!-- this is the first box -->
+                <div class="mainContentBox1" id="mainContentBox1">
+                    <div class="row justify-content-around userStatCont">
+                        <div class="col-sm-2 userStat userStat1">
+                            <h2>1024</h2>
+                            <p>Total User</p>
+                        </div>
+                        <div class="col-sm-2 userStat userStat2">
+                            <h2>256</h2>
+                            <p>New User</p>
+                        </div>
+                        <div class="col-sm-2 userStat userStat3">
+                            <h2>2048</h2>
+                            <p>Total Profiles</p>
+                        </div>
+                    </div>
+                    <!-- end of first row userStatCont -->
+                    <div class="row justify-content-around userStatCont">
+                        <div class="col-sm-4 profileStatCont">
+                            <h2>Profiles</h2>
+                            <div class="profilesStat">
+                                <h4>682</h4>
+                                <p>Investment Profile</p>
+                            </div>
+                            <div class="profilesStat">
+                                <h4>682</h4>
+                                <p>Investment Profile</p>
+                            </div>
+                            <div class="profilesStat">
+                                <h4>682</h4>
+                                <p>Investment Profile</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 webStatCont">
+                            <h2>Web Status</h2>
+                            <div class="webStatus"></div>
+                            <p>This shows how amazing developers at Katalyst are!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of first Box -->
+
+                <!-- this is second box -->
+                <div class="mainContentBox2" id="mainContentBox2">
+                    <div class="row profileContHeader justify-content-between align-items-center">
+                        <div class="col-sm-3 align-content-center">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-sm-6">
+                                    <h2>All User</h2>
+                                </div>    
+                                <div class="col-sm-1 text-left">
+                                    <i class="fas fa-sort-down" style="font-size: 16px;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 text-right userSearch">
+                            <form action="">   
+                                <input type="text" placeholder="Username" name="user">
+                                <i class="fas fa-search pointer"></i>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="userTable">
+                        <div class="row justify-content-around">
+                            <div class="col-sm-5 userRow">
+                                <div class="row align-items-center justify-content-start">
+                                    <div class="col-sm-2" style="padding: 0 20px 0 0;">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p>Suraj Dubey</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p><i class="fas fa-map-marker-alt pointer" style="margin-right: 10px;"></i>Delhi</p>
+                                    </div>
+                                    <div class="col-sm-3 text-right">
+                                        <i class="far fa-edit pointer" style="margin-right: 20px;"></i>
+                                        <i class="fas fa-trash-alt pointer"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of  user 1-->
+                            <div class="col-sm-5 userRow">
+                                <div class="row align-items-center justify-content-start">
+                                    <div class="col-sm-2" style="padding: 0 20px 0 0;">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p>Suraj Dubey</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p><i class="fas fa-map-marker-alt pointer" style="margin-right: 10px;"></i>Delhi</p>
+                                    </div>
+                                    <div class="col-sm-3 text-right">
+                                        <i class="far fa-edit pointer" style="margin-right: 20px;"></i>
+                                        <i class="fas fa-trash-alt pointer"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of  user 2-->
+                            <div class="col-sm-5 userRow">
+                                <div class="row align-items-center justify-content-start">
+                                    <div class="col-sm-2" style="padding: 0 20px 0 0;">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p>Suraj Dubey</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p><i class="fas fa-map-marker-alt pointer" style="margin-right: 10px;"></i>Delhi</p>
+                                    </div>
+                                    <div class="col-sm-3 text-right">
+                                        <i class="far fa-edit pointer" style="margin-right: 20px;"></i>
+                                        <i class="fas fa-trash-alt pointer"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of  user 3-->
+                            <div class="col-sm-5 userRow">
+                                <div class="row align-items-center justify-content-start">
+                                    <div class="col-sm-2" style="padding: 0 20px 0 0;">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <p>Suraj Dubey</p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p><i class="fas fa-map-marker-alt pointer" style="margin-right: 10px;"></i>Delhi</p>
+                                    </div>
+                                    <div class="col-sm-3 text-right">
+                                        <i class="far fa-edit editUsers pointer" style="margin-right: 20px;" ></i>
+                                        <i class="fas fa-trash-alt deleteUsers pointer"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of  user 4-->
+                        </div>
+                    </div>
+                </div>
+                <!-- end of second box -->
+
+                <!-- this is third box -->
+                <div class="mainContentBox3" id="mainContentBox3">
+                    <div class="notificationContainer">
+                        <div class="notificationContainerHeader">
+                            <h3>Notifications</h3>
+                        </div>
+                        <div class="notificationContainerMain">
+
+                            <!-- notification box 1 -->
+                            <div class="notificationBox">
+                                <div class="notification">
+                                    <h2>This is a sample notification</h2>
+                                    <p>
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                    </p>
+                                </div>
+                                <div 
+                                    class="expandNotification openExpandNotification"
+                                    id="expandNotification1"
+                                >
+                                    <p>
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                    </p>
+                                </div>
+                                <button 
+                                    class="openExpandNotifiactionButton"
+                                    id="closeExpandNotifiactionButton1"
+                                    onclick="openNot(1)"    
+                                >
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <button class="closeNotification">
+                                    <i class="fa fa-window-close"></i>
+                                </button>
+                            </div>
+
+                            <!-- notification box 2 -->
+                            <div class="notificationBox">
+                                <div class="notification">
+                                    <h2>This is a sample notification</h2>
+                                    <p>
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                    </p>
+                                </div>
+                                <div
+                                    class="expandNotification closeExpandNotification"
+                                    id="expandNotification2"
+                                    style="display: none;"
+                                >
+                                    <p>
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                    </p>
+                                </div>
+                                <button 
+                                    class="closeExpandNotifiactionButton"
+                                    id="closeExpandNotifiactionButton2"
+                                    onclick="openNot(2)"
+                                >
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <button class="closeNotification">
+                                    <i class="fa fa-window-close"></i>
+                                </button>
+                            </div>
+
+                            <!-- notification box 3 -->
+                            <div class="notificationBox">
+                                <div class="notification">
+                                    <h2>This is a sample notification</h2>
+                                    <p>
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                    </p>
+                                </div>
+                                <div
+                                    class="expandNotification closeExpandNotification"
+                                    id="expandNotification3"
+                                    style="display: none;"
+                                >
+                                    <p>
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                    </p>
+                                </div>
+                                <button
+                                    class="closeExpandNotifiactionButton"
+                                    id="closeExpandNotifiactionButton3"
+                                    onclick="openNot(3)"
+                                >
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <button class="closeNotification">
+                                    <i class="fa fa-window-close"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <!-- end of notification container main -->
+                    </div>
+                    <!-- end of notification container -->
+                </div>
+                <!-- end of the third box -->
+
+            </div>
+            <!-- End of mainContentArea -->
+        </div>
+        <!-- End of Main area -->
+        
+    </div>
+    <!-- End of bodyWrap -->
+
+    <!-- Post Load javaScript -->
+    <script src="./js/userDashboard.js"></script>
+
+</body>
+</html>

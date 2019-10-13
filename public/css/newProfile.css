@@ -1,0 +1,601 @@
+/* Global Style */
+/* ===================================================== */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace ;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;;
+}
+
+#bodyWrap{
+    overflow: hidden;
+    background: var(--white);
+    font-family: sans-serif;
+}
+
+.mobile{
+    display: none;
+}
+
+/* Header Area Style */
+/* ===================================================== */
+
+.headArea{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.headBar{
+    padding: 0 0px; 
+}
+
+/* header notification  */
+
+.mainHeadNotification {
+    font-size: 25px;
+    padding: 10px 30px;
+    position: fixed;
+    top: 15px;
+    right: 5px;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.mainHeadNotificationIcon {
+    position: relative;
+    top: -38px;
+    right: -10px;
+    text-align: center;
+    background: #dc3545;
+    border-radius: 50%;
+    font-size: 14px;
+    height: 15px;
+    padding: 2.5px 0;
+    width: 20px;
+    color: #fafafa;
+    z-index: 100000;
+}
+#mainHeadNotificationContainer{
+    transition: 300ms;
+}
+
+.mainHeadNotificationContainer{
+    /* this is to hide it by default */
+    width: 220px;
+    max-height: 400px;
+    position: absolute;
+    top: 70px;
+    right: 25px;
+    overflow: hidden;
+    transition:  400ms;
+    background: #6710f2ce;
+    border-radius: 15px;
+}
+
+.mainHeadNotificationContainer p{
+    background: #fafafa;
+    padding: 10px 20px;
+    margin: 10px 0;
+    height: auto;
+    text-align: left;
+    border-radius: 14px;
+    max-height: 35px !important;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.mainHeadNotificationContainer p:hover{
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.mainHeadNotificationContainer p{
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/*  mainbody area */
+
+
+
+
+
+/* side bar */
+
+.sideBar{
+    margin-top: 72px;
+    padding-top: 0px;
+    background: #f8f9fa;
+    height: clac(100vh - 100px);
+    width: 300px;
+}
+
+.userProfile{
+    background: linear-gradient(to right,#007bff4f 0%, #7349cc 100%);
+    width: 315px;
+    padding: 30px 0;
+    color: #fafafa;
+}
+
+.userProfile img{
+    height: 70px;
+    border-radius: 50%;
+}
+
+.userProfile p{
+    font-size: 16px;
+    padding: 5px 0 1px 0;
+}
+
+.viewButton{
+    width: 150px;
+    padding: 10px 15px;
+    text-align: center;
+    background: #6710f2ec;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    margin: 10px auto;
+}
+
+.profileSocialIcon{
+    padding-top: 25px;
+    text-align: center;
+    font-size: 24px;
+    color: #6610f2;
+}
+
+/* raiting */
+
+/*Rating-Stars*/
+.rating {
+    width: 90px;
+    margin: 0 auto 0  auto;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+  follow these rules. Every browser that supports :checked also supports :not(), so
+  it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float: right;
+    width: 0.8em;
+    /* padding:0 .1em; */
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:140%;
+    /* line-height:1.2; */
+    color:#ddd;
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: navajowhite;
+    
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: navajowhite;
+    
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: navajowhite;
+    
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+/*Rating-Stars*/
+#b1:hover{
+  color: #080707;
+  border: 1.2px solid #000;
+  background: rgb(255, 255, 255);
+}
+
+/* ====================================================== */
+
+/* mainArea */
+
+.mainArea{
+    height: calc(100vh - 80px);
+    width: calc(100vw - 300px);
+    margin-left: 300px;
+}
+
+/* mainArea1 */
+
+.mainArea1{
+    background: #ffffff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    padding: 30px;
+    box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.192);
+}
+
+.profileIntro{
+}
+
+.proDescCont{
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+}
+
+.proDescCont img{
+    position: absolute;
+    width: 100%;
+}
+
+.proDesc{
+    width: 100%;
+    height: 260px;
+    background: rgba(0, 0, 0, 0.493);
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+.proDesc h2, .proDesc p {
+    bottom: 35px;
+    left: 20px;
+    position: absolute;
+    color: #fafafa;
+}
+
+.founderHeader{
+    color: #6610f2;
+    font-size: 22px;
+    margin: 15px;
+}
+
+.proDesc p{
+    bottom: 15px;
+}
+
+.founderProfile img{
+    height: 40px;
+    border-radius: 50%;
+}
+
+.fouderProfileCont{
+    height: 260px;
+    overflow: hidden;
+}
+
+.founderProfile{
+    background: #6710f286;
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 35px;
+}
+
+.founderProfile h3{
+    margin-left: 7px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #f8f9faf6;
+}
+
+.founderProfile h3{
+    font-size: 20px;
+}
+
+.teamIntro{
+    padding: 50px 0 0 0;
+}
+
+.teamIntro h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.teamIntro p {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.projectStatus{
+    margin: 5px 0 5px 5px;
+    font-size: 14px !important;
+    color: #c0c0c0;
+    letter-spacing: 1px;
+}
+
+.projectStatusCompleted{
+    color: #6710f2be !important;
+}
+
+.projectStatusMain{
+    font-size: 22px !important;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #6610f2;
+}
+
+.statusChecked{
+    color: #6610f2;
+    font-size: 24px;
+    margin: 5px 10px;
+}
+
+.statusUnChecked{
+    font-size: 14px;
+    color: #c0c0c0d5;
+}
+
+/* sector */
+
+.sectorCont{
+    padding: 100px 0;
+}
+
+.sectorInfo{
+    position: relative;
+    background: #f8f8f8;
+    text-align: center;
+    color: #6610f2;
+    font-weight: 500;
+    padding: 20px 20px;
+    margin-bottom: 100px;
+    z-index: 10;
+    width: 130px;
+    font-size: 20px;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.13);
+}
+
+.sectorHeader{
+    position: absolute;
+    background: #6710f2be;
+    min-width: 150px;
+    text-align: center;
+    padding: 25px 20px 20px 20px;
+    top: 45px;
+    left: 80px;
+    font-size: 17px;
+    color: #fafafac4;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.281);
+}
+
+.what{
+    padding: 50px 0;
+}
+
+.what h2{
+    margin-bottom: 10px;
+}
+
+.what p{
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.invest p{
+        font-size: 22px;
+    padding: 50px 0 15px 0;
+}
+
+.rangeBar{
+    background: #6610f2;
+}
+
+.progress p{
+    font-size: 16px;
+    color: #080707;
+}
+
+.contact {
+    color: #fafafa;
+    background: #6710f2d3;
+    margin-top: 80px;
+    margin: 80px -30px -30px -30px;
+    padding: 50px 0;
+}
+
+.menu{
+    margin-right: 30px;
+}
+
+.mainHeadNotificationIcon {
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    top: -45px;
+}
+
+.contact p{
+    padding: 20px 0;
+}
+
+@media(max-width: 786px){
+    .mainHeadNotification{
+        top: 15px;
+        right: 55px;
+    }
+/* 
+    .founderProfile{    
+        text-align: center !important;
+    }
+
+    .founderProfile img{
+        margin-left: 140px;
+        padding: 5px;
+        height: 50px;
+        text-align: center !important;
+    } */
+
+    .mobile{
+        display: block !important;
+    }
+
+    .sectorCont{
+        padding-bottom: 0;
+    }
+
+    .sector{
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .sideBar{
+        display: none;
+    }
+
+    .mainArea{
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    .fouderProfileCont{
+        height: auto;
+    }
+
+    .mainArea1{
+        width: 100vw;
+        margin-left: 0;
+    }
+
+    .downBarContainer{
+        width: 100vw;
+        background: #fafafa;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0
+    }    
+
+    .alwaysOnDownBarContainer{
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        z-index: 1000;
+        background: #fafafafa;
+        font-size: 20px !important;
+        padding: 15px 5px;
+        color:#6610f2 !important;
+    }
+
+    .openNavRoundButton{
+        width: 100%;
+        z-index: 0;
+        text-align: center;
+    }
+
+    #openNavRoundButton{
+        position: absolute;
+        top: -35px;
+        /* if open 650px */
+        left: 0;
+        right: 0;
+        transition: 500ms;
+    }
+
+    .openNavRound{
+        background: #fafafa;
+        padding: 10px 15px 25px 15px;
+        border-radius: 25px;
+        text-align: center;
+        margin-bottom: -30px;
+    }
+
+    .mainDownMenuContainer{
+        background: #fafafa;
+        height: 600px;
+    }
+
+    .downMenuProfile{
+        background: #fafafa;
+        padding: 30px 0 50px 0;
+    }
+
+    .downMenuProfile img{
+        height: 90px;
+    }
+
+    .sectorInfo{
+        position: static;
+        margin-bottom: 0px;
+    }
+
+    .sectorHeader{
+        position: static;
+        margin-bottom: 30px;
+    }
+
+    .proDescCont img{
+        height: 100%;           
+    }
+
+    .proDesc{
+        height: 100%;
+    }
+
+    #contact{
+        padding-bottom: 100px;
+    }
+
+}

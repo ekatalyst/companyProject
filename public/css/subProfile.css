@@ -1,0 +1,266 @@
+
+.mainBox{
+    margin: 70px 0;
+    padding: 30px 0;
+    background: #fafafa;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #c0c0c0;
+}
+
+.aboutProfileHeaderContainer{
+    width: calc(100%);
+    padding: 30px;
+    display: flex;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #d7dee9 0%, #f5f7fa 74%);   
+    align-items: center;
+}
+
+.aboutBox, .teamBox, .investmentBox, .projectBox, .contactBox{
+    padding: 0;
+}
+
+.aboutProfilePicture{
+    width: 120px;
+}
+
+.aboutProfilePicture img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.aboutProfileHeader{
+    width: calc(100% - 120px);
+}
+
+.aboutProfileHeader h1{
+    font-size: 1em;
+}
+
+.aboutContainer, .teamInfoContainer, .projectContainer, .investmentContainer{
+    padding: 30px 50px;
+    text-align: justify;
+}
+
+.aboutContainer h3, .teamInfoContainer h3, .projectContainer h3, .investmentContainer h3{
+    color: #3b3b3b;
+}
+
+.aboutContainer, .teamInfoContainer, .projectContainer, .investmentContainer{
+    font-weight: 400;
+}
+
+.blankHorizontalLine{
+    padding: 1px;
+    width: 100%;
+    background: #3b3b3b;
+    margin-bottom:  5px;
+}
+
+.teamProfile{
+    width: 100%;
+}
+
+.teamProfileContainer{
+    max-height: 300px;
+    overflow: hidden;
+    width: 100%;
+    background: #3b3b3b;
+}
+
+.teamProfileContainer img{
+    width: 100%;
+    background-position: center;
+}
+
+.teamContainer{
+    padding: 20px 0;
+    text-align: justify
+}
+
+.projectProfileContainer{
+    width: 100%;
+    height: 300px;
+    background: #b3b3b;
+}
+
+.projectStatus{
+    width: 100%;
+    padding: 50px 50px 0px 50px;
+}
+
+.projectIconContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectIcon{
+    min-width: 300px;
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+    margin: 20px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #d7dee9 0%, #f5f7fa 74%);   
+}
+
+.projectProfileContainer{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.projectProfileContainer img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background-position: center;
+}
+
+.projectProfileContainerOverlay h1{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    color: #fafafa;
+}
+
+.projectProfileContainerOverlay{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+.investmentProfileContainer{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #d7dee9 0%, #f5f7fa 74%);   
+}
+
+.valuationValueContainer{
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.equityValue{
+    padding: 10px;
+    width: 250px;
+    margin: 0 20px;
+}
+
+.equityValue p{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.valuationValue p{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #d7dee9 0%, #f5f7fa 74%);   
+}
+
+.mainMainBox{
+    background: #fff;
+}
+
+.contactProfile{
+    padding: 0px;
+}
+
+.contactProfile h1{
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #d7dee9 0%, #f5f7fa 74%);   
+    width: 100%;
+    padding: 100px  0;
+}
+
+.contactEmail, .contactPhone{
+    margin: 50px auto;
+    min-width: 200px;
+}
+
+.contactProfileEmailAndPhone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contactEmail a, .contactPhone a{
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: #fafafa;
+}
+
+.contactSocialContainer{
+    padding: 30px 0;
+}
+
+.contactSocialContainer ul li{
+    list-style: none;
+    display: inline;
+    margin: 20px
+}
+
+.contactSocialContainer ul li img{
+    height: 35px;
+}
+
+#toggleMenu1, #toggleMenu2, #toggleMenu3, #toggleMenu4, #toggleMenu5,#toggleMenu6 {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px){
+    .aboutContainer, .teamInfoContainer, .projectContainer, .investmentContainer{
+        padding: 30px 15px;
+        text-align: justify;
+    }
+
+    .projectProfileContainer{
+        height: 200px;
+    }
+
+    .projectProfileContainerOverlay{
+        height: 200px;
+    }
+
+    .valuationValueContainer{
+        padding: 0 15px;
+    }
+
+    .valuationValueContainer{
+        display: block;
+    }
+
+    .equityValue{
+        width: 300px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+

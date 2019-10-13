@@ -1,0 +1,103 @@
+
+.contactShowImage{
+    margin-top: 80px;
+    width: 400px;
+}
+
+
+.mainBanner h2{
+    font-size: 60px;
+}
+
+.contactFeedButton button{
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    background: #fafafa;
+    border: none;
+    border-radius: 18px;
+    margin-right: 15px;
+    outline: none;
+    border: 2px #fafafa solid !important;
+}
+
+#viewFeedButton{
+    background: none;
+}
+
+.feedButton {
+    border: 2px #fafafa solid !important;
+    color: #fafafa;
+}
+
+.contactF{
+    display: block;
+}
+
+.contactAndFeed form {
+    width: 400px;
+    margin-top: 50px;
+}
+
+.contactAndFeed form input, .contactAndFeed form textarea{
+    width: 80%;
+    margin: 10px 0;
+    padding: 8px 10px;
+    border-radius: 7px;
+    outline: none;
+    border: 2px #fafafa solid;
+    background: #fafafa41;
+}
+
+.contactAndFeed form textarea{
+    resize: none;
+}
+
+.contactAndFeed button{
+    background: #fafafa;
+    border: none;
+    width: 120px;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin: 5px 0px 0 200px;
+    outline: none;
+    letter-spacing: 1px;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.212);
+}
+
+.contactAndFeed button:hover{
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.212);
+}
+
+.feedback{
+    display: none;
+}
+
+@media(max-width: 786px){
+
+    .contactFeedButton{
+        margin-top: 50px;
+    }
+
+    .mainBanner{
+        padding-top: 100px;
+    }
+
+    .contactAndFeed{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .contactFeedButton{
+        text-align: center;
+    }
+
+    .contactAndFeed label{
+        text-align: left !important;
+        width: 300px;
+    }
+
+    .contactShowImage{
+        display: none;
+    }
+
+}

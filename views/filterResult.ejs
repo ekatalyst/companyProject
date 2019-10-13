@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Styles -->
+	<link rel="stylesheet" href="css/filterResult.css">
+	<link rel="stylesheet" href="css/all.min.css">    
+    <link rel="stylesheet" href="css/hamburgerMenu.css">
+
+    <!-- Pre load javaScript -->
+
+</head>
+<body>
+    
+    <!-- This wraps the whole page -->
+    <div id="bodyWrap">
+        <!-- This holds the header -->
+        <div id="headArea" class="headArea">
+            <div class="headBar">
+                <script src="./js/headMenu.js"></script>
+                <div class="headBarButton">
+                    <!-- this is the button to open or close menu -->
+                    <button class="hamburger hamburger--slider" type="button" onclick="toggleHeadMenu()">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+                <div 
+                    class="headBarMenuContainer" 
+                    id="headBarMenuContainer"
+                    style="height: 0px;"
+                >
+                    <nav>
+                        <ul>
+                            <li>HOME</li>
+                            <li>ABOUT</li>
+                            <li>CONTACT</li>
+                            <li>DASHBOARD</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- End of head area -->
+        
+        <!-- This is the main section containing sidebar and content -->
+        <div id="mainArea" class="mainArea">
+
+            <!-- This is the side menu bar -->
+            <div class="sideBar">
+                <div class="sideBarMainMenu">
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="filterPerimeter">
+                                    <h5>Amount</h5>
+                                    <div class="slidecontainer">
+                                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                    </div>   
+                                    <p>50k</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filterPerimeter">
+                                    <h5>Profit</h5>
+                                    <div class="slidecontainer">
+                                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                    </div>   
+                                    <p>50k</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filterPerimeter">
+                                    <h5>Other</h5>
+                                    <div class="slidecontainer">
+                                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                    </div>   
+                                    <p>50k</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="filterSearchButton">SEARCH</button>
+                </div>
+                <!-- end of side bar main menu -->
+            </div>
+            <!-- end of side bar -->
+
+            <!-- This is the main content area -->
+            <div class="mainContentArea">
+
+                
+                <div class="mainContentBox2" id="mainContentBox2">
+                    <div class="userProfilesContainer">
+                        <div class="userProfilesContainerHeader">
+                            <h3>Matching Profiles</h3>
+                        </div>
+                        <div class="userProfilesContainerMain">
+                            
+                            <!-- First Profile -->
+                            <div class="userProfilesBox">
+                                <div class="userProfilesBoxRow1">
+                                    <div class="userProfilesBoxRow1Column1">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="userProfileBoxRow1Column3">
+                                        <button class="userProfilesEditButton">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="userProfilesBoxRow2">
+                                    <h5>Suraj Dubey</h5>
+                                    <p>
+                                        Here is some details about the current profile of the user.
+                                    </p>
+                                </div>
+                                <div class="userProfilesBoxRow3">
+                                    <p>VIEW</p>
+                                </div>
+                            </div>
+
+                            <!-- Second Profile-->
+                            <div class="userProfilesBox">
+                                <div class="userProfilesBoxRow1">
+                                    <div class="userProfilesBoxRow1Column1">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="userProfileBoxRow1Column3">
+                                        <button class="userProfilesEditButton">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="userProfilesBoxRow2">
+                                    <h5>Suraj Dubey</h5>
+                                    <p>
+                                        Here is some details about the current profile of the user.
+                                    </p>
+                                </div>
+                                <div class="userProfilesBoxRow3">
+                                    <p>VIEW</p>
+                                </div>
+                            </div>
+
+                            <!-- Third Profile -->
+                            <div class="userProfilesBox">
+                                <div class="userProfilesBoxRow1">
+                                    <div class="userProfilesBoxRow1Column1">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="userProfileBoxRow1Column3">
+                                        <button class="userProfilesEditButton">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="userProfilesBoxRow2">
+                                    <h5>Suraj Dubey</h5>
+                                    <p>
+                                        Here is some details about the current profile of the user.
+                                    </p>
+                                </div>
+                                <div class="userProfilesBoxRow3">
+                                    <p>VIEW</p>
+                                </div>
+                            </div>
+
+                            <!-- Fourth profile -->
+                            <div class="userProfilesBox">
+                                <div class="userProfilesBoxRow1">
+                                    <div class="userProfilesBoxRow1Column1">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="userProfileBoxRow1Column3">
+                                        <button class="userProfilesEditButton">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="userProfilesBoxRow2">
+                                    <h5>Suraj Dubey</h5>
+                                    <p>
+                                        Here is some details about the current profile of the user.
+                                    </p>
+                                </div>
+                                <div class="userProfilesBoxRow3">
+                                    <p>VIEW</p>
+                                </div>
+                            </div>
+
+                            <!-- Fifth profile -->
+                            <div class="userProfilesBox">
+                                <div class="userProfilesBoxRow1">
+                                    <div class="userProfilesBoxRow1Column1">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="userProfileBoxRow1Column3">
+                                        <button class="userProfilesEditButton">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="userProfilesBoxRow2">
+                                    <h5>Suraj Dubey</h5>
+                                    <p>
+                                        Here is some details about the current profile of the user.
+                                    </p>
+                                </div>
+                                <div class="userProfilesBoxRow3">
+                                    <p>VIEW</p>
+                                </div>
+                            </div>
+
+                            <!-- sixth profile -->
+                            <div class="userProfilesBox">
+                                <div class="userProfilesBoxRow1">
+                                    <div class="userProfilesBoxRow1Column1">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="userProfileBoxRow1Column3">
+                                        <button class="userProfilesEditButton">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="userProfilesBoxRow2">
+                                    <h5>Suraj Dubey</h5>
+                                    <p>
+                                        Here is some details about the current profile of the user.
+                                    </p>
+                                </div>
+                                <div class="userProfilesBoxRow3">
+                                    <p>VIEW</p>
+                                </div>
+                            </div>
+
+                            <!-- sevent profile -->
+                            <div class="userProfilesBox">
+                                <div class="userProfilesBoxRow1">
+                                    <div class="userProfilesBoxRow1Column1">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="userProfileBoxRow1Column3">
+                                        <button class="userProfilesEditButton">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="userProfilesBoxRow2">
+                                    <h5>Suraj Dubey</h5>
+                                    <p>
+                                        Here is some details about the current profile of the user.
+                                    </p>
+                                </div>
+                                <div class="userProfilesBoxRow3">
+                                    <p>VIEW</p>
+                                </div>
+                            </div>
+
+                            <!-- eight profile -->
+                            <div class="userProfilesBox">
+                                <div class="userProfilesBoxRow1">
+                                    <div class="userProfilesBoxRow1Column1">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="userProfileBoxRow1Column3">
+                                        <button class="userProfilesEditButton">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="userProfilesBoxRow2">
+                                    <h5>Suraj Dubey</h5>
+                                    <p>
+                                        Here is some details about the current profile of the user.
+                                    </p>
+                                </div>
+                                <div class="userProfilesBoxRow3">
+                                    <p>VIEW</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End of user profiles container main -->
+                    </div>
+                    <!-- end of user profile container  -->
+                </div>
+                <!-- end of second box -->
+
+            </div>
+            <!-- End of mainContentArea -->
+        </div>
+        <!-- End of Main area -->
+        
+    </div>
+    <!-- End of bodyWrap -->
+
+    <!-- Post Load javaScript -->
+    <script src="./js/userDashboard.js"></script>
+
+</body>
+</html>

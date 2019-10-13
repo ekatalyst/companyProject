@@ -1,0 +1,10 @@
+
+.mainArea{
+    /* margin-top: 70px !important; */
+    width: calc(100% - 300px) !important;
+    margin-left: 300px !important;
+}
+
+.sideBar{
+    margin-top: 70px !important;
+}

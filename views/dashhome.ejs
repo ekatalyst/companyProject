@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Styles -->
+	<link rel="stylesheet" href="css/userDashboard.css">
+	<link rel="stylesheet" href="css/all.min.css">    
+    <link rel="stylesheet" href="css/hamburgerMenu.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+    <link rel="stylesheet" href="/css/newProfile.css">
+    <link rel="stylesheet" href="/css/newIndex.css">
+
+
+
+    <!-- Pre load javaScript -->
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <!-- This wraps the whole page -->
+    <div id="bodyWrap">
+        <!-- This holds the header -->
+        <header style="background: #007bff;">
+            <nav class="whiteHeader">
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x menuOpenIcon" style="color: #007bff;"></i>
+               </div>
+               <div class="logo" style="color: #007bff;">
+                  KATALYST
+               </div>
+               <div class="menu" style="margin-right: 35px;">
+                  <ul style="color: #3b3b3b">
+                     <li><a href="/">Home</a></li>
+                     <li><a href="/about-us">About</a></li>
+                     <li><a href="/news">News</a></li>
+                     <li><a href="/contact">Contact</a></li>
+                     <li><a href="/dash">Dashboard</a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+            <div class="mainHeadNotification">
+                <i class="fas fa-bell" onclick="showMainNot()"></i>
+                <!-- notification reminder -->
+                <p class="mainHeadNotificationIcon" onclick="showMainNot()">2</p>
+                <!-- this is the real notification box-->
+                <div 
+                    class="mainHeadNotificationContainer"
+                    id="mainHeadNotificationContainer"
+                    style="height: 0px; text-align: center;"
+                >
+                    <p>Welcom to eKatalyst</p>
+                    <p>Nothing else to show</p>
+                    <i class="fas fa-times-circle" style="color: #fafafa;" onclick="showMainNot()"></i>                    
+                </div>
+                <!-- end of mainHeadNotificationBox -->
+            </div>
+            <!-- End of  mainHeadNotifiacction-->
+        
+        <!-- This is the main section containing sidebar and content -->
+        <div id="mainArea" class="mainArea">
+
+            <!-- This is the side menu bar -->
+            <div class="sideBar">
+                <div class="sideBarMainMenu">
+                    <nav>
+                        <ul>
+                            <li class="active" onclick="toggleBox(1)">
+                                <i class="fas fa-home"></i>
+                                <a >Home</a>
+                            </li>
+                            <li onclick="toggleBox(2)">
+                                <i class="fas fa-user"></i>
+                                <a >Profile</a>
+                            </li>
+                            <li onclick="toggleBox(3)">
+                                <i class="fas fa-user"></i>
+                                <a >Notifications</a>
+                            </li>
+                            <li style="position: relative;">
+                                <i class="fas fa-cog" onclick="showMainSettings()"></i>
+                                <a style="cursor: pointer;" onclick="showMainSettings()">Settings</a>
+                            </li>
+                            <li style="background: none;">
+                                <div 
+                                        class="mainSettingSubSettingContainer"
+                                        id="mainSettingSubSettingContainer"    
+                                        style="height:0px; margin: 0px; padding: 0px;"
+                                    >
+                                    <p>Edit Profile</p>
+                                    <p style="columns: #222222;">Logout</p>
+                                </div>
+                            </li>
+                                <!-- end of mainSettingSubSettingContainer -->
+                            <!-- end of setting -->
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end of side bar main menu -->
+            </div>
+            <!-- end of side bar -->
+
+            <!-- This is the main content area -->
+            <div class="mainContentArea">
+
+                <!-- this is the first box -->
+                <div class="mainContentBox1" id="mainContentBox1">
+                    <div class="userMainProfile">
+                    <!-- This is the main profile of user on the dashboard -->
+                        <div class="userMainProfileHead">
+                            <p><%= user.name %></p>
+                            <p>Email:- <%= user.email %></p>
+                        </div>
+                        <!-- The sub detail of the main user profile -->
+                        <div class="userMainProfileDetail">
+                            <div class="userMainProfileDetailHeader">
+                                <h3>Details</h3>
+                                <button class="userMainProfileDetailEditButton">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                            </div>
+                            <div class="userMainProfileDetailHead">
+                                <h5>Type of User</h5>
+                                <p style="text-transform: capitalize; color: #fafafa;">
+                                    <%= user.person.userType %>
+                                </p>
+                            </div>
+                            <div class="userMainProfileDetailHead">
+                                <h5>Mobile No.</h5>
+                                <p style="text-transform: capitalize; color: #fafafa;">
+                                    <%= user.person.userPhone %>
+                                </p>
+                            </div>
+                            <div class="userMainProfileDetailHead">
+                                <h5>Mobile No.</h5>
+                                <p style="color: #fafafa;">
+                                    <%= user.person.email %>
+                                </p>
+                            </div>
+                            <div class="userMainProfileDetailHead">
+                                <h5>Address</h5>
+                                <p style="text-transform: capitalize; color: #fafafa;">
+                                    <%= user.person.currentAddress %>
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <!-- end of user main profile detail -->
+                    </div>
+                    <!-- end of user main profile -->
+                </div>
+                <!-- End of first Box -->
+
+                <!-- this is second box -->
+                <div class="mainContentBox2" id="mainContentBox2">
+                    <div class="userProfilesContainer">
+                        <div class="userProfilesContainerHeader">
+                            <h3>Profiles</h3>
+                        </div>
+                        <div class="userProfilesContainerMain">
+                            
+                            <!-- First Profile -->
+                            <!-- <div class="userProfilesBox">
+                                <div class="userProfilesBoxRow1">
+                                    <div class="userProfilesBoxRow1Column1">
+                                        <img src="./img/instructors/ins1.jpg" alt="">
+                                    </div>
+                                    <div class="userProfilesBoxRow1Column2">
+                                        <p>Suraj Dubey</p>
+                                    </div>
+                                    <div class="userProfileBoxRow1Column3">
+                                        <button class="userProfilesEditButton">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="userProfilesBoxRow2">
+                                    <p>
+                                        Here is some details about the current profile of the user.
+                                        Here is some details about the current profile of the user.
+                                        Here is some details about the current profile of the user.
+                                    </p>
+                                </div>
+                                <div class="userProfilesBoxRow3">
+                                    <p>Completed 80%</p>
+                                </div>
+                                <div class="userProfilesBoxRow4">
+                                    <p>Profile of Investment</p>
+                                </div>
+                            </div> -->
+
+                            <!-- Second Profile-->
+                            <!-- <div class="userProfilesBox">
+                                <div class="userProfilesBoxRow1">
+                                    <div class="userProfilesBoxRow1Column1">
+                                        <img src="./img/instructors/ins2.jpg" alt="">
+                                    </div>
+                                    <div class="userProfilesBoxRow1Column2">
+                                        <p>Suraj Dubey</p>
+                                    </div>
+                                    <div class="userProfileBoxRow1Column3">
+                                        <button class="userProfilesEditButton">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="userProfilesBoxRow2">
+                                    <p>
+                                        Here is some details about the current profile of the user.
+                                        Here is some details about the current profile of the user.
+                                        Here is some details about the current profile of the user.
+                                    </p>
+                                </div>
+                                <div class="userProfilesBoxRow3">
+                                    <p>Completed 80%</p>
+                                </div>
+                                <div class="userProfilesBoxRow4">
+                                    <p>Profile of Investment</p>
+                                </div>
+                            </div> -->
+
+                            <!-- Third Profile -->
+                            <!-- <div class="userProfilesBox">
+                                <div class="userProfilesBoxRow1">
+                                    <div class="userProfilesBoxRow1Column1">
+                                        <img src="./img/instructors/ins3.jpg" alt="">
+                                    </div>
+                                    <div class="userProfilesBoxRow1Column2">
+                                        <p>Suraj Dubey</p>
+                                    </div>
+                                    <div class="userProfileBoxRow1Column3">
+                                        <button class="userProfilesEditButton">
+                                            <i class="fas fa-edit"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="userProfilesBoxRow2">
+                                    <p>
+                                        Here is some details about the current profile of the user.
+                                        Here is some details about the current profile of the user.
+                                        Here is some details about the current profile of the user.
+                                    </p>
+                                </div>
+                                <div class="userProfilesBoxRow3">
+                                    <p>Completed 0%</p>
+                                </div>
+                                <div class="userProfilesBoxRow4">
+                                    <p>Profile of Investment</p>
+                                </div>
+                            </div> -->
+
+                            <div class="row">
+                                <div class="col-sm-10 col-12 text-center" >
+                                    <img src="./img/instructors/sad.png">
+                                </div>
+                                <div class="col-sm-10 col-12 text-center" style="padding-top: 50px;" >
+                                    <p>Sorry, there are no profile to show.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End of user profiles container main -->
+                    </div>
+                    <!-- end of user profile container  -->
+                </div>
+                <!-- end of second box -->
+
+                <!-- this is third box -->
+                <div class="mainContentBox3" id="mainContentBox3">
+                    <div class="notificationContainer">
+                        <div class="notificationContainerHeader">
+                            <h3>Notifications</h3>
+                        </div>
+                        <div class="notificationContainerMain">
+
+                            <!-- notification box 1 -->
+                            <div class="notificationBox">
+                                <div class="notification">
+                                    <h2>Welcome to eKatakyst</h2>
+                                    <p>
+                                        Greetings from eKatalyst Team. <br>
+                                        Congratulations you have successfully created your account.  <br>
+                                        You can further manage your account from Dashboard. <br>
+                                    </p>
+                                </div>
+                                <div 
+                                    class="expandNotification openExpandNotification"
+                                    id="expandNotification1"
+                                >
+                                    <p>
+                                        <!-- Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification. -->
+                                    </p>
+                                </div>
+                                <button 
+                                    class="openExpandNotifiactionButton"
+                                    id="closeExpandNotifiactionButton1"
+                                    onclick="openNot(1)"    
+                                >
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <button class="closeNotification">
+                                    <i class="fa fa-window-close"></i>
+                                </button>
+                            </div>
+
+                            <!-- notification box 2 -->
+                            <div class="notificationBox">
+                                <div class="notification">
+                                    <h2>Nothing else to show</h2>
+                                    <p>
+                                        <!-- Greetings fro eKatalyst Team.
+                                        Congratulations you have successfully created your account. 
+                                        You can further manage your account from Dashboard. -->
+                                    </p>
+                                </div>
+                                <div
+                                    class="expandNotification closeExpandNotification"
+                                    id="expandNotification2"
+                                    style="display: none;"
+                                >
+                                    <p>
+                                        <!-- Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification. -->
+                                    </p>
+                                </div>
+                                <button 
+                                    class="closeExpandNotifiactionButton"
+                                    id="closeExpandNotifiactionButton2"
+                                    onclick="openNot(2)"
+                                >
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <button class="closeNotification">
+                                    <i class="fa fa-window-close"></i>
+                                </button>
+                            </div>
+
+                            <!-- notification box 3 -->
+                            <div class="notificationBox"> 
+                                <div class="notification">
+                                    <h2>Nothing else to show</h2>
+                                    <p>
+                                        <!-- Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification. -->
+                                    </p>
+                                </div>
+                                <div
+                                    class="expandNotification closeExpandNotification"
+                                    id="expandNotification3"
+                                    style="display: none;"
+                                >
+                                    <p>
+                                        <!-- Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification.
+                                        Here is some content about the notification. -->
+                                    </p>
+                                </div>
+                                <button
+                                    class="closeExpandNotifiactionButton"
+                                    id="closeExpandNotifiactionButton3"
+                                    onclick="openNot(3)"
+                                >
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <button class="closeNotification">
+                                    <i class="fa fa-window-close"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <!-- end of notification container main -->
+                    </div>
+                    <!-- end of notification container -->
+                </div>
+                <!-- end of the third box -->
+
+            </div>
+            <!-- End of mainContentArea -->
+        </div>
+        <!-- End of Main area -->
+        
+         <!-- only foe mobile -->
+                <div class="mobile downBarContainer">
+                    <!-- always on menu -->
+                    <div class="alwaysOnDownBarContainer">
+                        <div class="alwaysOnDownBar">
+                                <ul>
+                                    <div class="row">
+                                        <div class="col-3 text-center">
+                                            <li onclick="toggleBox(1)">
+                                                <!-- home -->
+                                                <i class="fas fa-home"></i>
+                                            </li>
+                                        </div>
+                                        <div class="col-3 text-center">
+                                            <li onclick="toggleBox(2)">
+                                                <!-- user -->
+                                                <i class="fas fa-user"></i>
+                                            </li>
+                                        </div>
+                                        <div class="col-3 text-center">
+                                            <li onclick="toggleBox(3)">
+                                                <!-- notification -->
+                                                <i class="fas fa-bell"></i>
+                                            </li>
+                                        </div>
+                                        <div class="col-3 text-center">
+                                            <li>
+                                                <!-- logout --><a href="/logout"><i class="fas fa-sign-out-alt"></i></a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </ul>
+                        </div>
+                    </div>
+                    <!-- end of alwaysOn -->
+                    <div class="openNavRoundButton" id="openNavRoundButton">
+                        <!-- only for css -->
+                        <!-- open and close button for down menu -->
+                        <i class="openNavRound fas fa-arrow-up" onclick="openCloseDownDashNav()"></i>
+
+                        <div class="downMenuProfile" style="padding-bottom: 10px;">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-4 text-center">
+                                    <img src="./img/instructors/ins1.jpg" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <h6 style="margin-top: 20px;"><%= user.name %></h6>
+                                    <p><%= user.email %></p>
+                                    <div class="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5
+                                            stars</label>
+                                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4"
+                                            title="Pretty good">4 stars</label>
+                                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3
+                                            stars</label>
+                                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2
+                                            stars</label>
+                                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1"
+                                            title="Sucks big time">1 star</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainDownMenuContainer">
+                            <ul>
+                                <li>
+                                    <button class="viewButton pointer" onclick="toggleBox(1)">HOME</button>
+                                </li>
+                                <li>
+                                    <button class="viewButton pointer" onclick="toggleBox(2)">PROFILE</button>
+                                </li>
+                                <li>
+                                    <button class="viewButton pointer" onclick="toggleBox(3)">NOTIFICATION</button>
+                                </li>
+                                <li>
+                                    <a href="/logout"><button class="viewButton pointer">LOGOUT</button></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+    <!-- End of bodyWrap -->
+    
+    <!-- Post load script -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/myAnimation.js"></script>
+    <script src="/js/userDashboard.js"></script>
+    <script src="/js/newProfile.js"></script>
+
+</body>
+</html>
