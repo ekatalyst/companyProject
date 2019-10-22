@@ -804,6 +804,14 @@ nav ul li a {
     display: none;
 }
 
+.mobileOnly{
+    display: none;
+}
+
+.desktopOnly{
+    display: block;
+}
+
 
 @media only screen and (max-width : 660px) {
 
@@ -815,4 +823,13 @@ nav ul li a {
     .menu .showing{
         padding-right: 0px !important;
     }
+
+    .mobileOnly{
+        display: block !important;
+    }
+
+    .desktopOnly{
+        display: none !important;
+    }
+
 }

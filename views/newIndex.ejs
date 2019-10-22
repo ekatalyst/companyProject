@@ -47,7 +47,7 @@
         <div class="mainHeadNotification">
             <i class="fas fa-bell" onclick="showMainNot()"></i>
             <!-- notification reminder -->
-            <p class="mainHeadNotificationIcon" onclick="showMainNot()">3</p>
+            <p class="mainHeadNotificationIcon" onclick="showMainNot()">2</p>
             <!-- this is the real notification box-->
             <div 
                 class="mainHeadNotificationContainer"
@@ -169,7 +169,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center ">
-                    <div class="col-sm-4justify-content-center threeFeatureBar">
+                    <div class="col-sm-4 justify-content-center threeFeatureBar">
                         <i class="fas fa-sort-up click-able" style="transform: rotate(270deg); margin-right: 8px;"></i>                            
                         <h6>Investment</h6>
                         <i class="fas fa-sort-up click-able" style="transform: rotate(90deg); margin-left: 10px;"></i>
@@ -234,10 +234,10 @@
                                 <img src="./img/instructors/asking.png" alt="" style="padding-bottom: 20px;">
                                 <h2>Whom you are represting?</h2>
                             </div>
-                            <div class="col-4 col-sm-6 text-center">
+                            <div class="col-8 col-sm-6 text-center">
                                 <a href="/userform5" class="btn btn-primary threeBoxButton fullToggleBoxButton">Investor</a>
                             </div>
-                            <div class="col-4 col-sm-6 text-center">
+                            <div class="col-8 col-sm-6 text-center">
                                 <a href="/userform3" class="btn btn-primary threeBoxButton fullToggleBoxButton">investment Seeker</a>
                             </div>
                         </div>
@@ -256,10 +256,10 @@
                                 <img src="./img/instructors/asking.png" alt="" style="padding-bottom: 20px;">
                                 <h2>Whom you are represting?</h2>
                             </div>
-                            <div class="col-4 col-sm-6 text-center">
+                            <div class="col-8 col-sm-6 text-center">
                                 <a href="/prefcr" class="btn btn-primary threeBoxButton fullToggleBoxButton">Donor</a>
                             </div>
-                            <div class="col-4 col-sm-6 text-center">
+                            <div class="col-8 col-sm-6 text-center">
                                 <a href="/userform4" class="btn btn-primary threeBoxButton fullToggleBoxButton">Donation Seeker</a>
                             </div>
                         </div>
@@ -305,17 +305,49 @@
                     data-lax-anchor="self"
                     data-lax-opacity="0 1, 100 1, 200 0.9, 250 0.9, 300 0.9, 350 0.4, 370 0.2, 400 0.1"
                 >
-                    <div class="col-sm-1 text-center">
+                    <div class="col-sm-1 text-center desktopOnly">
                         <i class="fas fa-sort-up click-able" style="transform: rotate(270deg);"></i>                            
                     </div>
                     <div class="col-sm-6 text-center" >
-                        <img src="/img/instructors/pra.jpg" alt="">
-                        <h6 class="lax" data-lax-preset="fadeInOut">Prateek Dash</h6>
-                        <p>
-                            Hi i am Prateek, the mind behind the business development and product framing of katalyst and i am here to help the startup ecosystem upto my full potential.
-                        </p>
+                        
+                        <div id="bannerTextSlide" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" >
+                                    <img src="/img/instructors/u1.jfif" alt="" style="width: 100px;">
+                                    <h6 class="lax" data-lax-preset="fadeInOut">Urwa Fathima</h6>
+                                    <p>
+                                        The concept is very unique and helpful for the investment seeker to get connected with potential investors.
+                                    </p>
+                                </div>
+                                <div class="carousel-item" >
+                                    <img src="/img/instructors/u2.jpg" alt="" style="width: 100px;">
+                                    <h6 class="lax" data-lax-preset="fadeInOut">Pranjul Mishra</h6>
+                                    <p>
+                                       Great platform and great approach to select project according to your preference.
+                                    </p>
+                                </div>
+                                <div class="carousel-item" >
+                                    <img src="/img/instructors/u3.png" alt="" style="width: 100px;">
+                                    <h6 class="lax" data-lax-preset="fadeInOut">Shubham Sharma</h6>
+                                    <p>
+                                       I want some more features to solve problems like legal compliances and marketing. 
+                                    </p>
+                                </div>
+                                <div class="carousel-item" >
+                                    <img src="/img/instructors/u4.jfif" alt="" style="width: 100px;">
+                                    <h6 class="lax" data-lax-preset="fadeInOut">Aniket Jain</h6>
+                                    <p>
+                                        Great UI/UX and the other aesthetic are mesmerizing.
+                                    </p>
+                                </div>
+                            </div>                
+                        </div>
                     </div>
-                    <div class="col-sm-1 text-center">
+                    <div class="col-sm-12 col-12 mobileOnly justify-content-center text-center" style="margin-top: 10px;">
+                        <i class="fas fa-sort-up click-able " style="transform: rotate(270deg); margin-left: 10px;"></i>                            
+                        <i class="fas fa-sort-up click-able " style="transform: rotate(90deg); margin-right: 10px;"></i>                            
+                    </div>
+                    <div class="col-sm-1 text-center desktopOnly">
                         <i class="fas fa-sort-up click-able" style="transform: rotate(90deg);"></i>                            
                     </div>
                 </div>
@@ -350,7 +382,7 @@
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-sm-4">
-                        <h6>Katalyst</h6>
+                        <h6>eKatalyst</h6>
                         <ul>
                             <li>
                                 <a href="">Terms and Conditions</a>
